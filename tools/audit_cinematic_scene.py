@@ -34,8 +34,8 @@ for row in samples:
         # Tangent of the unchanged river centreline, sufficient for sight anchors.
         slope=(river_center(center.x+.02)-river_center(center.x-.02))/.04
         forward=Vector((1,slope,0)).normalized()
-        for x,z in ((-5.5,1.0),(0,1.3),(5.5,1.2),(-4.1,2.7)):
-            target=center+forward*x+Vector((0,0,z));delta=target-eye
+        for x,z,lateral in ((-5.5,1.0,0),(0,1.3,0),(5.5,1.2,0),(-5.33,2.7,.18)):
+            target=center+forward*x+Vector((-forward.y,forward.x,0))*lateral+Vector((0,0,z));delta=target-eye
             near=min(near,delta.length)
             point,_,_,distance=bvh.ray_cast(eye,delta.normalized(),delta.length-.12)
             checks+=1
@@ -46,7 +46,8 @@ for row in samples:
                 bank_clearance=min(bank_clearance,half_width(p.x)-abs(p.y-river_center(p.x)))
 report={'status':'PASS' if not hits and bank_clearance>.45 else 'FAIL','camera_samples':len(samples),'boat_visibility_rays':checks,'camera_surface_clearance_m':clearance,'minimum_camera_anchor_distance_m':near,'boat_bank_margin_m':bank_clearance,'obstructions':hits[:80],'obstruction_count':len(hits),'scope':'Final Blender building/roof/bridge/terrain/shore and understory geometry; original tree canopies excluded. C++ camera samples at 60 Hz.'}
 report['camera_samples_sha256']=hashlib.sha256((ROOT/'results/cinematic_samples.csv').read_bytes()).hexdigest()
-report['flight_source_sha256']=hashlib.sha256((ROOT/'src/cinematic.h').read_bytes()).hexdigest()
+report['flight_source_sha256']=hashlib.sha256((ROOT/'src/cinematic.h').read_text(encoding='utf-8-sig').encode('utf8')).hexdigest()
+report['flight_source_digest_format']='UTF-8 with LF line endings'
 report['obstruction_time_buckets']={str(k):v for k,v in sorted(collections.Counter(int(h['time']) for h in hits).items())}
 (ROOT/'results/cinematic_geometry_audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8')
 print('CINEMATIC_AUDIT',json.dumps(report,ensure_ascii=False),flush=True)

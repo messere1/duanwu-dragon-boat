@@ -34,6 +34,7 @@ assert shadow_diff>1,'Shadow toggle did not change the scene'
 assert 'scene MSAA 4x' in log
 geometry=json.loads((out/'cinematic_geometry_audit.json').read_text(encoding='utf8'))
 assert geometry['camera_samples_sha256']==hashlib.sha256((out/'cinematic_samples.csv').read_bytes()).hexdigest()
+assert geometry['flight_source_sha256']==hashlib.sha256((ROOT/'src/cinematic.h').read_text(encoding='utf-8-sig').encode('utf8')).hexdigest()
 assert 'Pause and selection PASS' in log
 assert geometry['status']=='PASS' and geometry['camera_samples']==1561 and geometry['obstruction_count']==0
 playlog=(out/'playthrough.log').read_text(encoding='utf8')

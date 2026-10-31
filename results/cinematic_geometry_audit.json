@@ -3,12 +3,13 @@
   "camera_samples": 1561,
   "boat_visibility_rays": 12488,
   "camera_surface_clearance_m": 3.2523128986358643,
-  "minimum_camera_anchor_distance_m": 6.080869079766377,
+  "minimum_camera_anchor_distance_m": 5.898656290303859,
   "boat_bank_margin_m": 1.020362983222591,
   "obstructions": [],
   "obstruction_count": 0,
   "scope": "Final Blender building/roof/bridge/terrain/shore and understory geometry; original tree canopies excluded. C++ camera samples at 60 Hz.",
   "camera_samples_sha256": "60051caf0878935f098fa1ff7142e9d0fad4b5598a8ac346079c025ce11b2d85",
-  "flight_source_sha256": "8c9e011f7c355fa4e146d766da9926cc63ce2d0c20f217345a7094118131dd31",
-  "obstruction_time_buckets": {}
+  "flight_source_sha256": "ed25cebfa6b85f82562ee84b4e0393dbf670e8719c8f6aa1d553a1642fa0313f",
+  "obstruction_time_buckets": {},
+  "flight_source_digest_format": "UTF-8 with LF line endings"
 }

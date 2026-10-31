@@ -31,10 +31,18 @@ int main(){try{
  require(length(drumTip(0,1)-drumTip(2,1))<1e-8,"Drumming loop closes after two strokes");
  for(int side:{-1,1})for(int i=0;i<=2000;++i){auto tip=drumTip(i/1000.,side);require(tip.y>=1.669,"Stick tip must not pass through drum skin");require(std::abs(drumGrip(i/1000.,side).x-3.89)<=.111,"Hands stay within a seated player's reach");}
  require(motionForGroup("red_pennant__flag_cloth")==30&&motionForGroup("jade_pennant__flagpole.001")==0,"Flag cloth separated from the fixed pole");
+ auto flagMatrix=flagOrientation();
+ auto flagPoint=[&](Vec3 p){return Vec3{flagMatrix[0]*p.x+flagMatrix[4]*p.y+flagMatrix[8]*p.z+flagMatrix[12],flagMatrix[1]*p.x+flagMatrix[5]*p.y+flagMatrix[9]*p.z+flagMatrix[13],flagMatrix[2]*p.x+flagMatrix[6]*p.y+flagMatrix[10]*p.z+flagMatrix[14]};};
+ for(int team=0;team<2;++team)for(int i=0;i<=260;++i){
+  double t=i*.1;auto wave=flagOffset(1,2.7,t,5,team);Vec3 pole{-4.45,2.7,-.18},tip=flagPoint({pole.x+.88,pole.y+wave.vertical,pole.z+wave.lateral});
+  require(length(flagPoint(pole)-pole)<1e-10,"Reversing the flag must leave its pole edge fixed");
+  auto heading=b.direction(t/26.);Vec3 trailing{heading.x*(tip.x-pole.x)-heading.y*(tip.z-pole.z),heading.y*(tip.x-pole.x)+heading.x*(tip.z-pole.z),0};
+  require(dot(trailing,heading)<-.87,"Flag must trail toward the stern through river turns for both teams");
+ }
  for(int i=0;i<1000;++i){auto a=flagOffset(0,2.7,i*.03,5,0);require(a.vertical==0&&a.lateral==0,"Flag pole edge must be pinned");}
  require(std::abs(flagOffset(1,2.7,0,5,0).lateral-flagOffset(1,2.7,.3,5,0).lateral)>.015,"Flag free edge visibly moves");
  CameraFlight flight;for(int i=1;i<6;++i){double t=flight.keys[i].time,h=.0001;Vec3 left=(flight.at(t)-flight.at(t-h))*(1/h),right=(flight.at(t+h)-flight.at(t))*(1/h);require(length(left-right)<.002,"Cinematic Bezier camera has continuous velocity");}
  for(int i=1;i<=1560;++i){auto a=flight.at((i-1)/60.),b=flight.at(i/60.);require(length(b-a)<.2&&b.z>3.1,"Drone low flight remains above water with smooth per-frame motion");}
  require(length((flight.at(26)-b.at(1))-(flight.at(0)-b.at(0)))>12,"Cinematic camera is not rigidly attached to a boat");
- std::cout<<"PASS: OBJ/cache/coordinates, independent Bezier camera, variable speeds, paddles, drum contacts, flag pinning and motion, cinematic velocity continuity\n";return 0;
+ std::cout<<"PASS: OBJ/cache/coordinates, independent Bezier camera, variable speeds, paddles, drum contacts, flag pinning, sternward direction and motion, cinematic velocity continuity\n";return 0;
  }catch(const std::exception& e){std::cerr<<"FAIL: "<<e.what()<<"\n";return 1;}}

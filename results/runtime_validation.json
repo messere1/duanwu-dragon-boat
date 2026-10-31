@@ -5,7 +5,7 @@
   "material_batches": 715,
   "checked_frames": 34,
   "opengl_errors": 0,
-  "median_warm_frame_ms": 38.106,
+  "median_warm_frame_ms": 37.412,
   "full_timeline_seconds": 26,
   "race_samples": [
     [
@@ -69,8 +69,8 @@
     "Head variation does not affect fingers throughout both interpolated pose cycles"
   ],
   "limitation": "Authored kinematic racing with analytic surface wakes, not a hydrodynamic solver. Filtered directional shadows and 4x MSAA enabled. Vegetation belts use shared 3D tree geometry; analytic wind and wakes are not cloth/fluid solvers.",
-  "real_playthrough_frames": 537,
-  "real_playthrough_wall_seconds": 28.0756,
+  "real_playthrough_frames": 572,
+  "real_playthrough_wall_seconds": 27.8674,
   "real_playthrough_checkpoints": 6,
   "camera_geometry_audit": {
     "camera_samples": 1561,
@@ -82,7 +82,7 @@
   "flag_pole_edge_pinned": true,
   "shadow_map_size": 4096,
   "msaa_samples": 4,
-  "shadow_toggle_image_delta": 13.968073593073592,
+  "shadow_toggle_image_delta": 13.96715367965368,
   "landscape_tree_count": 216,
   "culling_scene_pixel_difference": 0,
   "static_triangles_culling_on_off": [
@@ -91,7 +91,7 @@
   ],
   "tree_prototype_triangles": 78374,
   "new_village_detail_triangles": 35746,
-  "real_playthrough_median_frame_ms": 35.988,
+  "real_playthrough_median_frame_ms": 32.434,
   "understory_triangles": 862098,
   "shrub_clumps": 777,
   "bamboo_groves": 14,

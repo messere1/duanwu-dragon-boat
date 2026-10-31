@@ -5,5 +5,48 @@ OBJ triangles 8221685, compact vertices 11773889, batches 715, cache 1
 Village detail triangles 35746
 Understory triangles 862098
 Sun shadow map 4096, scene MSAA 4x
-Textures 41, load seconds 11.4549
+Textures 41, load seconds 16.7564
+Verify frame 0: GL=0, frame_ms=87.917, time=0, eye=75,70,90
+Verify frame 1: GL=0, frame_ms=602.113, time=0, eye=-9.5,6.5,5.05
+Verify frame 2: GL=0, frame_ms=14.998, time=0, eye=-9.5,6.5,5.05
+Verify frame 3: GL=0, frame_ms=17.511, time=0, eye=-9.5,6.5,5.05
+Verify frame 4: GL=0, frame_ms=11.995, time=0, eye=-9.5,6.5,5.05
+Verify frame 5: GL=0, frame_ms=41.956, time=13, eye=29.6361,8.05227,0.38877
+Verify frame 6: GL=0, frame_ms=38.195, time=25, eye=73.5623,31.2399,20.1464
+Verify frame 7: GL=0, frame_ms=42.671, time=0, eye=73.0822,71.0417,90.8227
+Verify frame 8: GL=0, frame_ms=10.998, time=0, eye=-7.5,6.5,5.05
+Verify frame 9: GL=0, frame_ms=11.543, time=0, eye=-7.5,6.5,5.05
+Verify frame 10: GL=0, frame_ms=13.381, time=0, eye=-7.5,6.5,5.05
+Verify frame 11: GL=0, frame_ms=11.763, time=0, eye=7,8,16
+Verify frame 12: GL=0, frame_ms=40.528, time=26, eye=71.9997,32.0003,24.0005
+Verify frame 13: GL=0, frame_ms=33.886, time=1.29841, eye=-10.8722,4.5,10.55
+Verify frame 14: GL=0, frame_ms=37.386, time=1.7452, eye=-8.9813,4.5,10.55
+Verify frame 15: GL=0, frame_ms=39.673, time=2.10573, eye=-7.35708,4.5,10.55
+Race sample 5 red_distance=20.7911 jade_distance=18.4115 red_speed=4.93189 jade_speed=4.59817
+Verify frame 16: GL=0, frame_ms=41.997, time=5, eye=-9.24836,8.75595,5.27284
+Race sample 15 red_distance=68.5148 jade_distance=69.6868 red_speed=4.64243 jade_speed=4.74836
+Verify frame 17: GL=0, frame_ms=35.05, time=15, eye=42.8489,15.0283,1.60461
+Race sample 26 red_distance=122.299 jade_distance=121.984 red_speed=5.29634 jade_speed=4.83962
+Verify frame 18: GL=0, frame_ms=45.062, time=26, eye=71.9997,32.0003,24.0005
+Drum sample 0.1 right_tip_y=1.67 left_tip_y=2.25636
+Verify frame 19: GL=0, frame_ms=40.062, time=0.123366, eye=-11.3529,3.1,6.25
+Drum sample 0.64 right_tip_y=2.28495 left_tip_y=2.1954
+Verify frame 20: GL=0, frame_ms=31.996, time=0.769546, eye=-9.99075,3.1,6.25
+Drum sample 1.1 right_tip_y=2.25636 left_tip_y=1.67
+Verify frame 21: GL=0, frame_ms=37.356, time=1.29841, eye=-8.07221,3.1,6.25
+Verify frame 22: GL=0, frame_ms=44.996, time=2, eye=-17.9399,3.5,5.45
+Verify frame 23: GL=0, frame_ms=39.789, time=2.4, eye=-16.0921,3.5,5.45
+Pause and selection PASS
+Verify frame 24: GL=0, frame_ms=37.438, time=0, eye=-30.0008,19.0011,19.0012
+Verify frame 25: GL=0, frame_ms=38.004, time=4, eye=-11.0024,14.0035,11.003
+Verify frame 26: GL=0, frame_ms=42.942, time=10, eye=12.9842,3.20227,-0
+Verify frame 27: GL=0, frame_ms=35.14, time=16, eye=50.5306,15.9102,0.561955
+Verify frame 28: GL=0, frame_ms=30.458, time=21, eye=77.4348,23.2186,-5.51798
+Verify frame 29: GL=0, frame_ms=43.082, time=26, eye=71.9997,32.0003,24.0005
+Verify frame 30: GL=0, frame_ms=38.509, time=4, eye=6.38931,6.5,5.05
+Verify frame 31: GL=0, frame_ms=11.29, time=4, eye=6.38931,6.5,5.05
+Verify frame 32: GL=0, frame_ms=49.276, time=10, eye=12.9842,3.20227,-0
+Static visibility sample 32 triangles=15158925
+Verify frame 33: GL=0, frame_ms=30, time=10, eye=12.9842,3.20227,-0
+Static visibility sample 33 triangles=24985069
 SUCCESS

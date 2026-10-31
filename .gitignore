@@ -37,3 +37,6 @@ __pycache__/
 *.key
 .DS_Store
 Thumbs.db
+
+# Generated CPU test fixtures
+/results/tests_fixture/

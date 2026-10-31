@@ -13,4 +13,7 @@ struct CameraFlight {
     const char* stage(double t)const{return t<4?"SHOT 1 | Village and race start":t<10?"SHOT 2 | Approach the competing crews":t<17?"SHOT 3 | Side tracking and middle-race surge":t<22?"SHOT 4 | Rise above the river bend":"SHOT 5 | Final sprint and wide aerial finish";}
 };
 struct FlagOffset {double vertical=0,lateral=0;};
+// The stored flag mesh extends along +X. Rotate it about its pole into the
+// apparent wind: -X in boat space. A rotation preserves winding and normals.
+inline std::array<double,16> flagOrientation(){return {{-1,0,0,0, 0,1,0,0, 0,0,-1,0, -8.9,0,-.36,1}};}
 inline FlagOffset flagOffset(double u,double height,double time,double speed,int team){u=std::clamp(u,0.0,1.0);double phase=9*u+3*(height-2.46)-time*(4+.4*speed)+team*.9;return {.012*u*u*sin(phase*.8),(.035+.012*speed)*u*u*(.7*sin(phase)+.3*sin(1.9*phase+.5))};}
