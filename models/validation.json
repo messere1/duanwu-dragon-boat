@@ -1,0 +1,851 @@
+{
+  "status": "PASS",
+  "obj_files": 57,
+  "scene_nodes": 25751,
+  "checks": [
+    "triangle indices",
+    "finite positions and UVs",
+    "unit normals",
+    "nonzero triangle area",
+    "material and texture paths",
+    "manifest bounds",
+    "scene parent references",
+    "GLB and BLEND signatures"
+  ],
+  "files": [
+    {
+      "file": "boat_hull_red.obj",
+      "triangles": 47860,
+      "groups": 126,
+      "materials": [
+        "carved_red",
+        "darkwood",
+        "edge_gold",
+        "painted_red",
+        "wood"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "dragon_head_red.obj",
+      "triangles": 62070,
+      "groups": 33,
+      "materials": [
+        "boat_sculpt_red_open_head_ChineseDragon",
+        "boat_sculpt_red_open_head_ChineseDragonParts",
+        "carved_red",
+        "cream_paint",
+        "edge_gold"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "dragon_tail_red.obj",
+      "triangles": 1748,
+      "groups": 7,
+      "materials": [
+        "carved_red",
+        "edge_gold"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "boat_hull_jade.obj",
+      "triangles": 47860,
+      "groups": 126,
+      "materials": [
+        "carved_jade",
+        "darkwood",
+        "edge_gold",
+        "painted_jade",
+        "wood"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "dragon_head_jade.obj",
+      "triangles": 62070,
+      "groups": 33,
+      "materials": [
+        "boat_sculpt_jade_open_head_ChineseDragon",
+        "boat_sculpt_jade_open_head_ChineseDragonParts",
+        "carved_jade",
+        "cream_paint",
+        "edge_gold"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "dragon_tail_jade.obj",
+      "triangles": 1748,
+      "groups": 7,
+      "materials": [
+        "carved_jade",
+        "edge_gold"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "paddle.obj",
+      "triangles": 228,
+      "groups": 3,
+      "materials": [
+        "darkwood",
+        "wood"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "paddle_jade.obj",
+      "triangles": 228,
+      "groups": 3,
+      "materials": [
+        "darkwood",
+        "wood"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "rower_red.obj",
+      "triangles": 27602,
+      "groups": 6,
+      "materials": [
+        "open_human_standing_open_human_seated_Human.body.002",
+        "open_human_standing_open_human_seated_Human.ears.002",
+        "open_human_standing_open_human_seated_Human.eyebrow001.002",
+        "open_human_standing_open_human_seated_Human.fingernails.002",
+        "open_human_standing_open_human_seated_Human.lips.002",
+        "open_human_standing_open_human_seated_Human.low-poly.001",
+        "open_human_standing_open_human_seated_Human.male_casualsuit.001",
+        "open_human_standing_open_human_seated_Human.shoes02.002",
+        "open_human_standing_open_human_seated_Human.short01.002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "rower_jade.obj",
+      "triangles": 27602,
+      "groups": 6,
+      "materials": [
+        "open_human_standing_open_human_seated_Human.body.002",
+        "open_human_standing_open_human_seated_Human.ears.002",
+        "open_human_standing_open_human_seated_Human.eyebrow001.002",
+        "open_human_standing_open_human_seated_Human.fingernails.002",
+        "open_human_standing_open_human_seated_Human.lips.002",
+        "open_human_standing_open_human_seated_Human.low-poly.001",
+        "open_human_standing_open_human_seated_Human.male_casualsuit.001",
+        "open_human_standing_open_human_seated_Human.shoes02.002",
+        "open_human_standing_open_human_seated_Human.short01.002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "helmsman_red.obj",
+      "triangles": 27602,
+      "groups": 6,
+      "materials": [
+        "open_human_standing_open_human_seated_Human.body.002",
+        "open_human_standing_open_human_seated_Human.ears.002",
+        "open_human_standing_open_human_seated_Human.eyebrow001.002",
+        "open_human_standing_open_human_seated_Human.fingernails.002",
+        "open_human_standing_open_human_seated_Human.lips.002",
+        "open_human_standing_open_human_seated_Human.low-poly.001",
+        "open_human_standing_open_human_seated_Human.male_casualsuit.001",
+        "open_human_standing_open_human_seated_Human.shoes02.002",
+        "open_human_standing_open_human_seated_Human.short01.002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "helmsman_jade.obj",
+      "triangles": 27602,
+      "groups": 6,
+      "materials": [
+        "open_human_standing_open_human_seated_Human.body.002",
+        "open_human_standing_open_human_seated_Human.ears.002",
+        "open_human_standing_open_human_seated_Human.eyebrow001.002",
+        "open_human_standing_open_human_seated_Human.fingernails.002",
+        "open_human_standing_open_human_seated_Human.lips.002",
+        "open_human_standing_open_human_seated_Human.low-poly.001",
+        "open_human_standing_open_human_seated_Human.male_casualsuit.001",
+        "open_human_standing_open_human_seated_Human.shoes02.002",
+        "open_human_standing_open_human_seated_Human.short01.002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "drum.obj",
+      "triangles": 1208,
+      "groups": 22,
+      "materials": [
+        "darkwood",
+        "gold",
+        "ivory",
+        "red"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "pennant_red.obj",
+      "triangles": 292,
+      "groups": 2,
+      "materials": [
+        "gold",
+        "red"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "pennant_jade.obj",
+      "triangles": 292,
+      "groups": 2,
+      "materials": [
+        "gold",
+        "jade"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "pavilion.obj",
+      "triangles": 30078,
+      "groups": 142,
+      "materials": [
+        "cut_limestone",
+        "darkwood",
+        "lacquer_red",
+        "paving",
+        "plaque",
+        "tile_grey",
+        "wood"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "finish_gate.obj",
+      "triangles": 70716,
+      "groups": 250,
+      "materials": [
+        "banner",
+        "basket_fibre",
+        "cut_limestone",
+        "darkwood",
+        "gold",
+        "lacquer_red",
+        "red",
+        "tile_grey",
+        "wood"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "arch_bridge.obj",
+      "triangles": 20392,
+      "groups": 157,
+      "materials": [
+        "cut_limestone",
+        "paving",
+        "stone"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "lantern_post.obj",
+      "triangles": 3388,
+      "groups": 26,
+      "materials": [
+        "basket_fibre",
+        "cut_limestone",
+        "darkwood",
+        "gold",
+        "red"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "tree.obj",
+      "triangles": 78374,
+      "groups": 1,
+      "materials": [
+        "open_tree_tree_small_02_branches",
+        "open_tree_tree_small_02_leaves",
+        "open_tree_tree_small_02_trunk"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "rock.obj",
+      "triangles": 6050,
+      "groups": 1,
+      "materials": [
+        "open_rock_rock_moss_set_01"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "course_buoy.obj",
+      "triangles": 205,
+      "groups": 3,
+      "materials": [
+        "gold",
+        "red"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "quay_access.obj",
+      "triangles": 7416,
+      "groups": 68,
+      "materials": [
+        "cut_limestone",
+        "paving",
+        "stone"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "mooring_dock.obj",
+      "triangles": 3436,
+      "groups": 27,
+      "materials": [
+        "basket_fibre",
+        "darkwood",
+        "wood"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "riverside_bench.obj",
+      "triangles": 540,
+      "groups": 5,
+      "materials": [
+        "cut_limestone",
+        "wood"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "zongzi_basket.obj",
+      "triangles": 7676,
+      "groups": 50,
+      "materials": [
+        "bamboo",
+        "basket_fibre",
+        "ivory",
+        "zongzi_leaf"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "tea_stall.obj",
+      "triangles": 10826,
+      "groups": 72,
+      "materials": [
+        "bamboo",
+        "basket_fibre",
+        "canvas",
+        "ceramic",
+        "darkwood",
+        "festival_sign",
+        "ivory",
+        "wood",
+        "zongzi_leaf"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "bamboo_planter.obj",
+      "triangles": 2576,
+      "groups": 52,
+      "materials": [
+        "bamboo",
+        "cut_limestone",
+        "darkwood",
+        "reed_leaf"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "reed_patch.obj",
+      "triangles": 552,
+      "groups": 54,
+      "materials": [
+        "bamboo",
+        "basket_fibre",
+        "reed_leaf"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "drummer_red.obj",
+      "triangles": 27602,
+      "groups": 6,
+      "materials": [
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.001",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.003",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.004",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.006",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.007",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.008",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.009",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.010",
+        "open_human_drummer_open_human_standing_open_human_seated_Human."
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "drummer_jade.obj",
+      "triangles": 27602,
+      "groups": 6,
+      "materials": [
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.001",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.003",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.004",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.006",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.007",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.008",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.009",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.010",
+        "open_human_drummer_open_human_standing_open_human_seated_Human."
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "drummer_stool.obj",
+      "triangles": 756,
+      "groups": 7,
+      "materials": [
+        "darkwood",
+        "wood"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "dragon_boat_red.obj",
+      "triangles": 503398,
+      "groups": 322,
+      "materials": [
+        "boat_sculpt_red_open_head_ChineseDragon",
+        "boat_sculpt_red_open_head_ChineseDragonParts",
+        "carved_red",
+        "cream_paint",
+        "darkwood",
+        "edge_gold",
+        "gold",
+        "ivory",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.001",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.003",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.004",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.006",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.007",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.008",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.009",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.010",
+        "open_human_drummer_open_human_standing_open_human_seated_Human.",
+        "open_human_standing_open_human_seated_Human.body.002",
+        "open_human_standing_open_human_seated_Human.ears.002",
+        "open_human_standing_open_human_seated_Human.eyebrow001.002",
+        "open_human_standing_open_human_seated_Human.fingernails.002",
+        "open_human_standing_open_human_seated_Human.lips.002",
+        "open_human_standing_open_human_seated_Human.low-poly.001",
+        "open_human_standing_open_human_seated_Human.male_casualsuit.001",
+        "open_human_standing_open_human_seated_Human.shoes02.002",
+        "open_human_standing_open_human_seated_Human.short01.002",
+        "painted_red",
+        "red",
+        "wood"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "dragon_boat_jade.obj",
+      "triangles": 503398,
+      "groups": 322,
+      "materials": [
+        "boat_sculpt_jade_open_head_ChineseDragon",
+        "boat_sculpt_jade_open_head_ChineseDragonParts",
+        "carved_jade",
+        "cream_paint",
+        "darkwood",
+        "edge_gold",
+        "gold",
+        "ivory",
+        "jade",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.001",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.003",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.004",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.006",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.007",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.008",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.009",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.010",
+        "open_human_drummer_open_human_standing_open_human_seated_Human.",
+        "open_human_standing_open_human_seated_Human.body.002",
+        "open_human_standing_open_human_seated_Human.ears.002",
+        "open_human_standing_open_human_seated_Human.eyebrow001.002",
+        "open_human_standing_open_human_seated_Human.fingernails.002",
+        "open_human_standing_open_human_seated_Human.lips.002",
+        "open_human_standing_open_human_seated_Human.low-poly.001",
+        "open_human_standing_open_human_seated_Human.male_casualsuit.001",
+        "open_human_standing_open_human_seated_Human.shoes02.002",
+        "open_human_standing_open_human_seated_Human.short01.002",
+        "painted_jade",
+        "red",
+        "wood"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "riverside_house.obj",
+      "triangles": 31420,
+      "groups": 161,
+      "materials": [
+        "aged_iron",
+        "aged_timber",
+        "darkwood",
+        "huizhou_masonry",
+        "huizhou_white",
+        "tile_grey",
+        "window_shadow"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "quay_segment.obj",
+      "triangles": 6636,
+      "groups": 59,
+      "materials": [
+        "aged_iron",
+        "huizhou_masonry",
+        "huizhou_path",
+        "stone"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "bank_ground.obj",
+      "triangles": 324,
+      "groups": 3,
+      "materials": [
+        "huizhou_earth",
+        "huizhou_path"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "huizhou_tall_house.obj",
+      "triangles": 35632,
+      "groups": 200,
+      "materials": [
+        "aged_iron",
+        "aged_timber",
+        "darkwood",
+        "huizhou_masonry",
+        "huizhou_white",
+        "tile_grey",
+        "window_shadow"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "huizhou_tea_house.obj",
+      "triangles": 35834,
+      "groups": 204,
+      "materials": [
+        "aged_iron",
+        "aged_timber",
+        "darkwood",
+        "huizhou_masonry",
+        "huizhou_shop_label",
+        "huizhou_white",
+        "laundry_linen",
+        "tile_grey",
+        "window_shadow"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "huizhou_courtyard.obj",
+      "triangles": 87378,
+      "groups": 321,
+      "materials": [
+        "aged_timber",
+        "darkwood",
+        "huizhou_inn_label",
+        "huizhou_masonry",
+        "huizhou_path",
+        "huizhou_white",
+        "tile_grey",
+        "window_shadow"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "household_props.obj",
+      "triangles": 2204,
+      "groups": 31,
+      "materials": [
+        "aged_timber",
+        "clay_dark",
+        "clay_ochre",
+        "darkwood",
+        "reed_leaf"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "laundry_rack.obj",
+      "triangles": 364,
+      "groups": 6,
+      "materials": [
+        "bamboo",
+        "basket_fibre",
+        "laundry_blue",
+        "laundry_linen"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "street_gutter.obj",
+      "triangles": 1512,
+      "groups": 14,
+      "materials": [
+        "darkwood",
+        "drain_water",
+        "huizhou_masonry"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "distant_hills.obj",
+      "triangles": 7000,
+      "groups": 1,
+      "materials": [
+        "hill_far"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "distant_tree.obj",
+      "triangles": 9856,
+      "groups": 9,
+      "materials": [
+        "woodland_bark",
+        "woodland_leaf_a",
+        "woodland_leaf_b",
+        "woodland_leaf_c"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "quay_weathered_b.obj",
+      "triangles": 6636,
+      "groups": 59,
+      "materials": [
+        "aged_iron",
+        "huizhou_masonry",
+        "huizhou_path",
+        "stone"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "panorama_terrain.obj",
+      "triangles": 80000,
+      "groups": 2,
+      "materials": [
+        "panorama_ground"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "panorama_farmland.obj",
+      "triangles": 101454,
+      "groups": 360,
+      "materials": [
+        "field_earth",
+        "field_green",
+        "field_olive",
+        "field_ridge"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "panorama_streets.obj",
+      "triangles": 2104,
+      "groups": 26,
+      "materials": [
+        "drain_water",
+        "huizhou_masonry",
+        "huizhou_path"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "panorama_sky.obj",
+      "triangles": 16128,
+      "groups": 1,
+      "materials": [
+        "panorama_sky"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "natural_riverbed.obj",
+      "triangles": 54720,
+      "groups": 2,
+      "materials": [
+        "river_gravel",
+        "river_silt"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "scene_preview.obj",
+      "triangles": 7943521,
+      "groups": 25315,
+      "materials": [
+        "aged_iron",
+        "aged_timber",
+        "bamboo",
+        "banner",
+        "basket_fibre",
+        "boat_sculpt_jade_open_head_ChineseDragon",
+        "boat_sculpt_jade_open_head_ChineseDragonParts",
+        "boat_sculpt_red_open_head_ChineseDragon",
+        "boat_sculpt_red_open_head_ChineseDragonParts",
+        "canvas",
+        "carved_jade",
+        "carved_red",
+        "ceramic",
+        "clay_dark",
+        "clay_ochre",
+        "cream_paint",
+        "cut_limestone",
+        "darkwood",
+        "drain_water",
+        "edge_gold",
+        "festival_sign",
+        "field_earth",
+        "field_green",
+        "field_olive",
+        "field_ridge",
+        "gold",
+        "hill_far",
+        "huizhou_earth",
+        "huizhou_inn_label",
+        "huizhou_masonry",
+        "huizhou_path",
+        "huizhou_shop_label",
+        "huizhou_white",
+        "ivory",
+        "jade",
+        "lacquer_red",
+        "laundry_blue",
+        "laundry_linen",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.001",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.003",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.004",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.006",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.007",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.008",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.009",
+        "open_human_drummer_open_human_standing_open_human_seated_Hu.010",
+        "open_human_drummer_open_human_standing_open_human_seated_Human.",
+        "open_human_standing_open_human_seated_Human.body.002",
+        "open_human_standing_open_human_seated_Human.ears.002",
+        "open_human_standing_open_human_seated_Human.eyebrow001.002",
+        "open_human_standing_open_human_seated_Human.fingernails.002",
+        "open_human_standing_open_human_seated_Human.lips.002",
+        "open_human_standing_open_human_seated_Human.low-poly.001",
+        "open_human_standing_open_human_seated_Human.male_casualsuit.001",
+        "open_human_standing_open_human_seated_Human.shoes02.002",
+        "open_human_standing_open_human_seated_Human.short01.002",
+        "open_rock_rock_moss_set_01",
+        "open_tree_tree_small_02_branches",
+        "open_tree_tree_small_02_leaves",
+        "open_tree_tree_small_02_trunk",
+        "painted_jade",
+        "painted_red",
+        "panorama_ground",
+        "panorama_sky",
+        "paving",
+        "plaque",
+        "red",
+        "reed_leaf",
+        "river_gravel",
+        "river_silt",
+        "stone",
+        "tile_grey",
+        "water",
+        "window_shadow",
+        "wood",
+        "woodland_bark",
+        "woodland_leaf_a",
+        "woodland_leaf_b",
+        "woodland_leaf_c",
+        "zongzi_leaf"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "panorama_valley_closure.obj",
+      "triangles": 27200,
+      "groups": 1,
+      "materials": [
+        "panorama_ground"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "river_surface.obj",
+      "triangles": 40320,
+      "groups": 1,
+      "materials": [
+        "water"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "eroded_riverbank_faces.obj",
+      "triangles": 1504,
+      "groups": 1,
+      "materials": [
+        "river_gravel"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "bank_replacement_groups.obj",
+      "triangles": 220223,
+      "groups": 4,
+      "materials": [
+        "panorama_ground",
+        "river_gravel",
+        "water"
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "dispersed_village_landuse.obj",
+      "triangles": 358123,
+      "groups": 892,
+      "materials": [
+        "field_earth",
+        "field_green",
+        "field_olive",
+        "field_ridge",
+        "huizhou_masonry",
+        "huizhou_path",
+        "panorama_ground"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "rechecked_after_tree_clearance": [
+    "scene_preview.obj"
+  ],
+  "rechecked_after_river_refinement": [
+    "scene_preview.obj",
+    "dispersed_village_landuse.obj"
+  ]
+}

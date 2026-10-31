@@ -1,0 +1,695 @@
+newmtl aged_iron
+Ka 0.18 0.18 0.18
+Kd 0.04500 0.04500 0.03800
+Ks 0.1425 0.1425 0.1425
+Ns 25.92
+d 1
+
+newmtl aged_timber
+Ka 0.18 0.18 0.18
+Kd 0.44000 0.39000 0.30000
+Ks 0.1550 0.1550 0.1550
+Ns 32.00
+d 1
+map_Kd ../textures/wood_planks_grey_Diffuse.png
+map_Bump ../textures/wood_planks_grey_nor_gl.png
+
+newmtl bamboo
+Ka 0.18 0.18 0.18
+Kd 0.27000 0.23000 0.11000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+
+newmtl banner
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1550 0.1550 0.1550
+Ns 32.00
+d 1
+map_Kd ../textures/banner.png
+
+newmtl basket_fibre
+Ka 0.18 0.18 0.18
+Kd 0.34000 0.24000 0.12000
+Ks 0.0675 0.0675 0.0675
+Ns 4.00
+d 1
+
+newmtl boat_sculpt_jade_open_head_ChineseDragon
+Ka 0.18 0.18 0.18
+Kd 0.01800 0.13000 0.08800
+Ks 0.1400 0.1400 0.1400
+Ns 24.78
+d 1
+map_Bump ../textures/open_head_Image_2.png
+
+newmtl boat_sculpt_jade_open_head_ChineseDragonParts
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1400 0.1400 0.1400
+Ns 24.78
+d 1
+map_Kd ../textures/open_head_Image_3.png
+map_Bump ../textures/open_head_Image_5.png
+
+newmtl boat_sculpt_red_open_head_ChineseDragon
+Ka 0.18 0.18 0.18
+Kd 0.24000 0.02500 0.01200
+Ks 0.1400 0.1400 0.1400
+Ns 24.78
+d 1
+map_Bump ../textures/open_head_Image_2.png
+
+newmtl boat_sculpt_red_open_head_ChineseDragonParts
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1400 0.1400 0.1400
+Ns 24.78
+d 1
+map_Kd ../textures/open_head_Image_3.png
+map_Bump ../textures/open_head_Image_5.png
+
+newmtl canvas
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0400 0.0400 0.0400
+Ns 4.00
+d 1
+map_Kd ../textures/canvas.png
+
+newmtl carved_jade
+Ka 0.18 0.18 0.18
+Kd 0.01800 0.13000 0.08800
+Ks 0.1450 0.1450 0.1450
+Ns 27.08
+d 1
+
+newmtl carved_red
+Ka 0.18 0.18 0.18
+Kd 0.24000 0.02500 0.01200
+Ks 0.1450 0.1450 0.1450
+Ns 27.08
+d 1
+
+newmtl ceramic
+Ka 0.18 0.18 0.18
+Kd 0.36000 0.42000 0.37000
+Ks 0.2050 0.2050 0.2050
+Ns 62.72
+d 1
+
+newmtl clay_dark
+Ka 0.18 0.18 0.18
+Kd 0.09000 0.10000 0.07500
+Ks 0.1000 0.1000 0.1000
+Ns 10.04
+d 1
+
+newmtl clay_ochre
+Ka 0.18 0.18 0.18
+Kd 0.24000 0.13000 0.07500
+Ks 0.0725 0.0725 0.0725
+Ns 4.00
+d 1
+
+newmtl cream_paint
+Ka 0.18 0.18 0.18
+Kd 0.64000 0.55000 0.34000
+Ks 0.1375 0.1375 0.1375
+Ns 23.67
+d 1
+
+newmtl cut_limestone
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0525 0.0525 0.0525
+Ns 4.00
+d 1
+map_Kd ../textures/huizhou_stone.png
+
+newmtl darkwood
+Ka 0.18 0.18 0.18
+Kd 0.05500 0.03900 0.02600
+Ks 0.1000 0.1000 0.1000
+Ns 10.04
+d 1
+
+newmtl drain_water
+Ka 0.18 0.18 0.18
+Kd 0.03500 0.05500 0.03900
+Ks 0.2125 0.2125 0.2125
+Ns 68.21
+d 1
+
+newmtl edge_gold
+Ka 0.18 0.18 0.18
+Kd 0.48000 0.29000 0.07500
+Ks 0.1550 0.1550 0.1550
+Ns 32.00
+d 1
+
+newmtl festival_sign
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0750 0.0750 0.0750
+Ns 4.15
+d 1
+map_Kd ../textures/stall_sign.png
+
+newmtl field_earth
+Ka 0.18 0.18 0.18
+Kd 0.23000 0.20000 0.12000
+Ks 0.0300 0.0300 0.0300
+Ns 4.00
+d 1
+
+newmtl field_green
+Ka 0.18 0.18 0.18
+Kd 0.17000 0.25000 0.09000
+Ks 0.0300 0.0300 0.0300
+Ns 4.00
+d 1
+
+newmtl field_olive
+Ka 0.18 0.18 0.18
+Kd 0.25000 0.29000 0.12000
+Ks 0.0300 0.0300 0.0300
+Ns 4.00
+d 1
+
+newmtl field_ridge
+Ka 0.18 0.18 0.18
+Kd 0.13000 0.16000 0.07500
+Ks 0.0300 0.0300 0.0300
+Ns 4.00
+d 1
+
+newmtl gold
+Ka 0.18 0.18 0.18
+Kd 0.39000 0.25000 0.08500
+Ks 0.1375 0.1375 0.1375
+Ns 23.67
+d 1
+
+newmtl hill_far
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0300 0.0300 0.0300
+Ns 4.00
+d 1
+map_Kd ../textures/huizhou_soil.png
+
+newmtl huizhou_earth
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0375 0.0375 0.0375
+Ns 4.00
+d 1
+map_Kd ../textures/huizhou_soil.png
+
+newmtl huizhou_inn_label
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0675 0.0675 0.0675
+Ns 4.00
+d 1
+map_Kd ../textures/huizhou_inn_sign.png
+
+newmtl huizhou_masonry
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0500 0.0500 0.0500
+Ns 4.00
+d 1
+map_Kd ../textures/huizhou_stone.png
+
+newmtl huizhou_path
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0550 0.0550 0.0550
+Ns 4.00
+d 1
+map_Kd ../textures/huizhou_paving.png
+
+newmtl huizhou_shop_label
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0675 0.0675 0.0675
+Ns 4.00
+d 1
+map_Kd ../textures/huizhou_shop_sign.png
+
+newmtl huizhou_white
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0450 0.0450 0.0450
+Ns 4.00
+d 1
+map_Kd ../textures/huizhou_plaster.png
+
+newmtl ivory
+Ka 0.18 0.18 0.18
+Kd 0.29000 0.21000 0.12000
+Ks 0.1175 0.1175 0.1175
+Ns 15.68
+d 1
+
+newmtl jade
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1550 0.1550 0.1550
+Ns 32.00
+d 1
+map_Kd ../textures/cloth_jade.png
+
+newmtl lacquer_red
+Ka 0.18 0.18 0.18
+Kd 0.24000 0.02600 0.01800
+Ks 0.1600 0.1600 0.1600
+Ns 34.61
+d 1
+
+newmtl laundry_blue
+Ka 0.18 0.18 0.18
+Kd 0.15000 0.20000 0.21000
+Ks 0.0425 0.0425 0.0425
+Ns 4.00
+d 1
+
+newmtl laundry_linen
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0400 0.0400 0.0400
+Ns 4.00
+d 1
+map_Kd ../textures/canvas.png
+
+newmtl open_human_drummer_open_human_standing_open_human_seated_Hu
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+map_d ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+
+newmtl open_human_drummer_open_human_standing_open_human_seated_Hu.001
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_shoes02_diffuse.png
+map_d ../textures/open_human_seated_shoes02_diffuse.png
+
+newmtl open_human_drummer_open_human_standing_open_human_seated_Hu.002
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+map_d ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+
+newmtl open_human_drummer_open_human_standing_open_human_seated_Hu.003
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+map_d ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+
+newmtl open_human_drummer_open_human_standing_open_human_seated_Hu.004
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_brown_eye.png
+map_d ../textures/open_human_seated_brown_eye.png
+
+newmtl open_human_drummer_open_human_standing_open_human_seated_Hu.005
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+map_d ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+
+newmtl open_human_drummer_open_human_standing_open_human_seated_Hu.006
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_short01_diffuse.png
+map_d ../textures/open_human_seated_short01_diffuse.png
+
+newmtl open_human_drummer_open_human_standing_open_human_seated_Hu.007
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_eyebrow001.png
+map_d ../textures/open_human_seated_eyebrow001.png
+
+newmtl open_human_drummer_open_human_standing_open_human_seated_Hu.008
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+map_d ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+
+newmtl open_human_drummer_open_human_standing_open_human_seated_Hu.009
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+map_d ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+
+newmtl open_human_drummer_open_human_standing_open_human_seated_Hu.010
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+map_d ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+
+newmtl open_human_drummer_open_human_standing_open_human_seated_Human.
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_male_casualsuit04_diffuse.png
+map_Bump ../textures/open_human_seated_male_casualsuit04_normal.png
+map_d ../textures/open_human_seated_male_casualsuit04_diffuse.png
+
+newmtl open_human_standing_open_human_seated_Human.body.002
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+map_d ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+
+newmtl open_human_standing_open_human_seated_Human.ears.002
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+map_d ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+
+newmtl open_human_standing_open_human_seated_Human.eyebrow001.002
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_eyebrow001.png
+map_d ../textures/open_human_seated_eyebrow001.png
+
+newmtl open_human_standing_open_human_seated_Human.fingernails.002
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+map_d ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+
+newmtl open_human_standing_open_human_seated_Human.genitals.002
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+map_d ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+
+newmtl open_human_standing_open_human_seated_Human.lips.002
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+map_d ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+
+newmtl open_human_standing_open_human_seated_Human.low-poly.001
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_brown_eye.png
+map_d ../textures/open_human_seated_brown_eye.png
+
+newmtl open_human_standing_open_human_seated_Human.male_casualsuit.001
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_male_casualsuit04_diffuse.png
+map_Bump ../textures/open_human_seated_male_casualsuit04_normal.png
+map_d ../textures/open_human_seated_male_casualsuit04_diffuse.png
+
+newmtl open_human_standing_open_human_seated_Human.nipple.002
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+map_d ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+
+newmtl open_human_standing_open_human_seated_Human.shoes02.002
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_shoes02_diffuse.png
+map_d ../textures/open_human_seated_shoes02_diffuse.png
+
+newmtl open_human_standing_open_human_seated_Human.short01.002
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_short01_diffuse.png
+map_d ../textures/open_human_seated_short01_diffuse.png
+
+newmtl open_human_standing_open_human_seated_Human.toenails.002
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1050 0.1050 0.1050
+Ns 11.52
+d 1
+map_Kd ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+map_d ../textures/open_human_seated_middleage_lightskinned_male_diffuse2.png
+
+newmtl open_rock_rock_moss_set_01
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1550 0.1550 0.1550
+Ns 32.00
+d 1
+map_Kd ../textures/open_rock_rock_moss_set_01_diff.png
+map_Bump ../textures/open_rock_rock_moss_set_01_nor_gl.png
+
+newmtl open_tree_tree_small_02_branches
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1550 0.1550 0.1550
+Ns 32.00
+d 1
+map_Kd ../textures/open_tree_tree_small_02_branch_diff.png
+map_Bump ../textures/open_tree_tree_small_02_branch_nor_gl.png
+
+newmtl open_tree_tree_small_02_leaves
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1550 0.1550 0.1550
+Ns 32.00
+d 1
+map_Kd ../textures/open_tree_tree_small_02_leaves_diff-tree_small_02_leaves_alpha.png
+map_Bump ../textures/open_tree_tree_small_02_leaves_nor_gl.png
+map_d ../textures/open_tree_tree_small_02_leaves_diff-tree_small_02_leaves_alpha.png
+
+newmtl open_tree_tree_small_02_trunk
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1550 0.1550 0.1550
+Ns 32.00
+d 1
+map_Kd ../textures/open_tree_tree_small_02_diff.png
+map_Bump ../textures/open_tree_tree_small_02_nor_gl.png
+
+newmtl painted_jade
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1225 0.1225 0.1225
+Ns 17.52
+d 1
+map_Kd ../textures/boat_painted_jade.png
+
+newmtl painted_red
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1225 0.1225 0.1225
+Ns 17.52
+d 1
+map_Kd ../textures/boat_painted_red.png
+
+newmtl panorama_ground
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0300 0.0300 0.0300
+Ns 4.00
+d 1
+map_Kd ../textures/huizhou_soil.png
+
+newmtl panorama_sky
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0925 0.0925 0.0925
+Ns 8.00
+d 1
+map_Kd ../textures/panorama_sky.png
+
+newmtl paving
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0525 0.0525 0.0525
+Ns 4.00
+d 1
+map_Kd ../textures/huizhou_paving.png
+
+newmtl plaque
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1550 0.1550 0.1550
+Ns 32.00
+d 1
+map_Kd ../textures/plaque.png
+
+newmtl red
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1550 0.1550 0.1550
+Ns 32.00
+d 1
+map_Kd ../textures/cloth_red.png
+
+newmtl reed_leaf
+Ka 0.18 0.18 0.18
+Kd 0.14000 0.21000 0.07500
+Ks 0.0750 0.0750 0.0750
+Ns 4.15
+d 1
+
+newmtl stone
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.1550 0.1550 0.1550
+Ns 32.00
+d 1
+map_Kd ../textures/stone_brick_wall_001_Diffuse.png
+map_Bump ../textures/stone_brick_wall_001_nor_gl.png
+
+newmtl tile_grey
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0525 0.0525 0.0525
+Ns 4.00
+d 1
+map_Kd ../textures/huizhou_tiles.png
+
+newmtl water
+Ka 0.18 0.18 0.18
+Kd 0.05500 0.10500 0.09000
+Ks 0.2300 0.2300 0.2300
+Ns 81.92
+d 1
+
+newmtl window_shadow
+Ka 0.18 0.18 0.18
+Kd 0.02800 0.04300 0.04300
+Ks 0.1800 0.1800 0.1800
+Ns 46.08
+d 1
+
+newmtl wood
+Ka 0.18 0.18 0.18
+Kd 0.65000 0.43000 0.24000
+Ks 0.1550 0.1550 0.1550
+Ns 32.00
+d 1
+map_Kd ../textures/wood_planks_grey_Diffuse.png
+map_Bump ../textures/wood_planks_grey_nor_gl.png
+
+newmtl woodland_bark
+Ka 0.18 0.18 0.18
+Kd 0.09000 0.06700 0.04400
+Ks 0.0350 0.0350 0.0350
+Ns 4.00
+d 1
+
+newmtl woodland_leaf_a
+Ka 0.18 0.18 0.18
+Kd 0.07500 0.14000 0.05000
+Ks 0.0425 0.0425 0.0425
+Ns 4.00
+d 1
+
+newmtl woodland_leaf_b
+Ka 0.18 0.18 0.18
+Kd 0.11500 0.19000 0.08000
+Ks 0.0400 0.0400 0.0400
+Ns 4.00
+d 1
+
+newmtl woodland_leaf_c
+Ka 0.18 0.18 0.18
+Kd 0.13000 0.17000 0.07500
+Ks 0.0350 0.0350 0.0350
+Ns 4.00
+d 1
+
+newmtl zongzi_leaf
+Ka 0.18 0.18 0.18
+Kd 0.08000 0.15000 0.05500
+Ks 0.1200 0.1200 0.1200
+Ns 16.59
+d 1
+
+newmtl river_silt
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0400 0.0400 0.0400
+Ns 4.00
+d 1
+map_Kd ../textures/huizhou_soil.png
+
+newmtl river_gravel
+Ka 0.18 0.18 0.18
+Kd 1.00000 1.00000 1.00000
+Ks 0.0500 0.0500 0.0500
+Ns 4.00
+d 1
+map_Kd ../textures/huizhou_soil.png

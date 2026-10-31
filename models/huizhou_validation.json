@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "houses": 85,
+  "open_courtyards": [
+    {
+      "name": "north_back_lane_house_1",
+      "floor_hit_z": 6.3324
+    },
+    {
+      "name": "north_back_lane_house_4",
+      "floor_hit_z": 7.7002
+    },
+    {
+      "name": "north_back_lane_house_7",
+      "floor_hit_z": 13.1034
+    },
+    {
+      "name": "pano_back_house_-1_-1_0",
+      "floor_hit_z": 7.5986
+    },
+    {
+      "name": "pano_back_house_-1_-1_2",
+      "floor_hit_z": 8.5025
+    },
+    {
+      "name": "pano_back_house_-1_1_0",
+      "floor_hit_z": 9.4562
+    },
+    {
+      "name": "pano_back_house_-1_1_2",
+      "floor_hit_z": 13.0688
+    },
+    {
+      "name": "pano_back_house_1_-1_0",
+      "floor_hit_z": 7.7535
+    },
+    {
+      "name": "pano_back_house_1_-1_2",
+      "floor_hit_z": 7.4573
+    },
+    {
+      "name": "pano_back_house_1_1_0",
+      "floor_hit_z": 5.3373
+    },
+    {
+      "name": "pano_back_house_1_1_2",
+      "floor_hit_z": 9.533
+    },
+    {
+      "name": "south_back_lane_house_0",
+      "floor_hit_z": 5.1584
+    },
+    {
+      "name": "south_back_lane_house_3",
+      "floor_hit_z": 7.4357
+    },
+    {
+      "name": "south_back_lane_house_6",
+      "floor_hit_z": 4.8042
+    }
+  ],
+  "supported_river_steps": 222,
+  "checks": [
+    "All town buildings clear the river corridor",
+    "Courtyard sky openings verified by downward rays",
+    "Original woodland retained and extended",
+    "Two original street watercourses retained",
+    "River stairs have masonry below the water and clear the boat lanes"
+  ]
+}

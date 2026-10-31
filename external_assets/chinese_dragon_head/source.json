@@ -1,0 +1,157 @@
+{
+  "animationCount": 0,
+  "categories": [
+    {
+      "uid": "ed9e048550b2478eb1ab2faaba192832",
+      "name": "Animals & Pets",
+      "slug": "animals-pets",
+      "uri": "https://api.sketchfab.com/v3/categories/ed9e048550b2478eb1ab2faaba192832",
+      "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/926733e187aa5a479aedd2581bffb3ea-v2.svg",
+      "thumbnails": [
+        {
+          "width": "512",
+          "height": "288",
+          "url": "https://static.sketchfab.com/categories/ed9e048550b2478eb1ab2faaba192832/512x288.png"
+        },
+        {
+          "width": "800",
+          "height": "450",
+          "url": "https://static.sketchfab.com/categories/ed9e048550b2478eb1ab2faaba192832/800x450.png"
+        }
+      ]
+    }
+  ],
+  "commentCount": 0,
+  "createdAt": "2022-03-30T11:49:50.330841",
+  "embedUrl": "https://sketchfab.com/models/217d9a108f12485088dcaf49b11d9ac0/embed",
+  "faceCount": 599294,
+  "isAgeRestricted": false,
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "likeCount": 7,
+  "name": "Chinese Dragon Head",
+  "publishedAt": "2022-03-30T11:56:51.785875",
+  "soundCount": 0,
+  "staffpickedAt": null,
+  "tags": [
+    {
+      "name": "head",
+      "slug": "head",
+      "uri": "https://api.sketchfab.com/v3/tags/head"
+    },
+    {
+      "name": "creature",
+      "slug": "creature",
+      "uri": "https://api.sketchfab.com/v3/tags/creature"
+    },
+    {
+      "name": "dragon",
+      "slug": "dragon",
+      "uri": "https://api.sketchfab.com/v3/tags/dragon"
+    }
+  ],
+  "thumbnails": {
+    "images": [
+      {
+        "uid": "e2c85502d3aa4478aef0a81e7aaf89c8",
+        "width": 1920,
+        "height": 1080,
+        "size": 63170,
+        "url": "https://media.sketchfab.com/models/217d9a108f12485088dcaf49b11d9ac0/thumbnails/5faa7b446edf4458957ad44b7444fed3/f3fd959f2ce94716b1598364fb5c9ab9.jpeg"
+      },
+      {
+        "uid": "b9c90909660440468f9de5857cbf6577",
+        "width": 1024,
+        "height": 576,
+        "size": 20577,
+        "url": "https://media.sketchfab.com/models/217d9a108f12485088dcaf49b11d9ac0/thumbnails/5faa7b446edf4458957ad44b7444fed3/b87dee151323494b838085767792e5e8.jpeg"
+      },
+      {
+        "uid": "3d466fe901704f21b2291f91286efa18",
+        "width": 720,
+        "height": 405,
+        "size": 11839,
+        "url": "https://media.sketchfab.com/models/217d9a108f12485088dcaf49b11d9ac0/thumbnails/5faa7b446edf4458957ad44b7444fed3/0974ae94cf4040a780db868de9162e15.jpeg"
+      },
+      {
+        "uid": "c11d67dec60b4fe6a513ff6d843f2791",
+        "width": 256,
+        "height": 144,
+        "size": 2737,
+        "url": "https://media.sketchfab.com/models/217d9a108f12485088dcaf49b11d9ac0/thumbnails/5faa7b446edf4458957ad44b7444fed3/49b7cc7f3ac745b2b12ece3223ff2431.jpeg"
+      },
+      {
+        "uid": "55f3092b76c14668a73f230f8f4265fb",
+        "width": 64,
+        "height": 36,
+        "size": 887,
+        "url": "https://media.sketchfab.com/models/217d9a108f12485088dcaf49b11d9ac0/thumbnails/5faa7b446edf4458957ad44b7444fed3/e3c3f434d53e4eecae1d0e017514bebf.jpeg"
+      }
+    ]
+  },
+  "uid": "217d9a108f12485088dcaf49b11d9ac0",
+  "uri": "https://api.sketchfab.com/v3/models/217d9a108f12485088dcaf49b11d9ac0",
+  "user": {
+    "uid": "3410c0b2867d43da984f34520fa7d1fc",
+    "username": "CalWhite",
+    "displayName": "CalWhite",
+    "account": "basic",
+    "profileUrl": "https://sketchfab.com/CalWhite",
+    "avatar": {
+      "uid": "00e567d59de947db9d32b19c6f91f742",
+      "uri": "https://api.sketchfab.com/v3/avatars/00e567d59de947db9d32b19c6f91f742",
+      "images": [
+        {
+          "width": 32,
+          "height": 32,
+          "size": 2493,
+          "url": "https://media.sketchfab.com/avatars/00e567d59de947db9d32b19c6f91f742/0f9c4fa4518f4dc09573292c615ea782.png"
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "size": 5002,
+          "url": "https://media.sketchfab.com/avatars/00e567d59de947db9d32b19c6f91f742/f1dc4da9e135408e8623ac635029bad7.png"
+        },
+        {
+          "width": 90,
+          "height": 90,
+          "size": 14915,
+          "url": "https://media.sketchfab.com/avatars/00e567d59de947db9d32b19c6f91f742/134bddd23a6b4156a6920264b8336177.png"
+        },
+        {
+          "width": 100,
+          "height": 100,
+          "size": 17820,
+          "url": "https://media.sketchfab.com/avatars/00e567d59de947db9d32b19c6f91f742/b22c25b7295145efbe7a20b28914b38b.png"
+        }
+      ]
+    },
+    "uri": "https://api.sketchfab.com/v3/users/3410c0b2867d43da984f34520fa7d1fc"
+  },
+  "vertexCount": 301983,
+  "viewCount": 2273,
+  "viewerUrl": "https://sketchfab.com/3d-models/chinese-dragon-head-217d9a108f12485088dcaf49b11d9ac0",
+  "isDownloadable": true,
+  "isProtected": false,
+  "description": "Chinese Dragon Head made as part  of a uni project.",
+  "price": null,
+  "downloadCount": 142,
+  "editorUrl": "https://sketchfab.com/models/217d9a108f12485088dcaf49b11d9ac0/edit",
+  "status": {
+    "warning": {},
+    "processing": "SUCCEEDED"
+  },
+  "source": "website",
+  "hasCommentsDisabled": false,
+  "updatedAt": "2022-07-12T04:00:45.089326",
+  "pbrType": "metalness",
+  "textureCount": 6,
+  "materialCount": 2
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "objects_replaced": 9,
+  "old_vertices": [
+    11848476,
+    11848476,
+    11848476
+  ],
+  "new_vertices": [
+    11951162,
+    11951162,
+    11951162
+  ],
+  "terrain_triangles_removed": 486647,
+  "terrain_triangles_added": 764811,
+  "scene_triangles": 8221685,
+  "rigid_tree_meshes_shifted": 726,
+  "rigid_tree_vertices_shifted": 3263250,
+  "source_sha256": "154c77eef995c2985b9012916f4782f8dc4576f20fbbe9be896e9de382438e9e"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "drummers": [
+    {
+      "team": "red",
+      "facing": "stern (-X)",
+      "pose": "seated",
+      "foot_min_z": 0.9287133812904358,
+      "head_max_z": 2.102627754211426,
+      "stool_top_z": 1.248,
+      "drum_top_z": 1.66
+    },
+    {
+      "team": "jade",
+      "facing": "stern (-X)",
+      "pose": "seated",
+      "foot_min_z": 0.9287133812904358,
+      "head_max_z": 2.102627754211426,
+      "stool_top_z": 1.248,
+      "drum_top_z": 1.66
+    }
+  ]
+}

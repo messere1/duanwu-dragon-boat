@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Gate ridge follows the river width, with no vertical stray member",
+    "Sign UVs follow horizontal and vertical geometry axes",
+    "Former bridge entrances remain open public access steps; downstream bridge moved beyond the animated boat route",
+    "Dock deck meets the bottom access step and stays clear of the boat lane",
+    "Festival stall and twelve reed patches are assembled in the scene"
+  ]
+}

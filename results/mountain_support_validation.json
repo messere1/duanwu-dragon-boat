@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "houses_checked": 85,
+  "house_matrix_max_error": 0.0,
+  "ground_support_samples": 425,
+  "maximum_ground_support_change_m": 0.0,
+  "rigid_trees_snapped": 86,
+  "shared_trees_snapped": 216,
+  "method": "Old/new triangle BVH ground difference preserves original trunk planting depth"
+}

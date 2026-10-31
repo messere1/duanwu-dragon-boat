@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "roles": {
+    "rowing": {
+      "hair_vertices": 11034,
+      "finger_vertices": 552,
+      "minimum_finger_distance_to_head_center_m": 0.28760240651667,
+      "head_mask_radius_m": 0.195,
+      "interpolation_checks": 1600
+    },
+    "drumming": {
+      "hair_vertices": 11034,
+      "finger_vertices": 552,
+      "minimum_finger_distance_to_head_center_m": 0.30850681227446825,
+      "head_mask_radius_m": 0.195,
+      "interpolation_checks": 1600
+    }
+  }
+}

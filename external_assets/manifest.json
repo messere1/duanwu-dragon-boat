@@ -1,0 +1,449 @@
+[
+  {
+    "id": "tree_small_02",
+    "source": "https://polyhaven.com/a/tree_small_02",
+    "author": {
+      "Rico Cilliers": "All"
+    },
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "files": [
+      {
+        "path": "tree_small_02/api_files.json",
+        "sha256": "7c0e6eb0a72ba73056a25f587fa2442bc9d7e5db0d42c6d77c6182c8a5563c65"
+      },
+      {
+        "path": "tree_small_02/source.json",
+        "sha256": "9113f036471834472335338b03bba9d8ae459a9f55480b7db4bece7dcbf9511c"
+      },
+      {
+        "path": "tree_small_02/tree_small_02.bin",
+        "sha256": "8da6c3c389ad8748286d1b7488cd827f75ebdad9d8f59ef7dfb0916df5edc634"
+      },
+      {
+        "path": "tree_small_02/tree_small_02_1k.gltf",
+        "sha256": "3062a709614c05b80fdc1e56583998bc3cb1027b0d52f956c8ecfb882ff8ca6d"
+      },
+      {
+        "path": "tree_small_02/textures/tree_small_02_arm_1k.jpg",
+        "sha256": "891c5a1bb124292984b01558e9f2b0302d27d2fa3ccf9dfc6c34f9ea4ca24e6c"
+      },
+      {
+        "path": "tree_small_02/textures/tree_small_02_branch_arm_1k.jpg",
+        "sha256": "8968b46d76c67da09ebbf4eed04b8123c9e0ddf5b55d123968b35b32aa76d27a"
+      },
+      {
+        "path": "tree_small_02/textures/tree_small_02_branch_diff_1k.jpg",
+        "sha256": "a71b768e330c0c6cca097e30314f6b4e842ef724a1370f6aab14b4434eec64cb"
+      },
+      {
+        "path": "tree_small_02/textures/tree_small_02_branch_nor_gl_1k.jpg",
+        "sha256": "a2efae9e7fede259601188cd5cb7e561fc502bd87e04d862a9532b2d8e647a62"
+      },
+      {
+        "path": "tree_small_02/textures/tree_small_02_diff_1k.jpg",
+        "sha256": "4e0093f407b3a1120a36de49a48ebe5a465a9a9b77e361c7a3e66866e115e404"
+      },
+      {
+        "path": "tree_small_02/textures/tree_small_02_leaves_arm_1k.jpg",
+        "sha256": "71f81374daf5a8f3e6eb2c694264a1769fdb0bea508178e4105618eecea83c3e"
+      },
+      {
+        "path": "tree_small_02/textures/tree_small_02_leaves_diff_1k.jpg",
+        "sha256": "261e7d7a5ac7d2e16ea8823ff8510be8f3f615999724232994039ad2885e5c36"
+      },
+      {
+        "path": "tree_small_02/textures/tree_small_02_leaves_nor_gl_1k.jpg",
+        "sha256": "8c72e04fb23e16ae1df79c01385a638473d1dd4dede3d51e83d70153c129f09b"
+      },
+      {
+        "path": "tree_small_02/textures/tree_small_02_nor_gl_1k.jpg",
+        "sha256": "9c83be074c950ea1b94c732c0c0291b53b9ba357f932d378bafe3ca3b4418871"
+      }
+    ]
+  },
+  {
+    "id": "rock_moss_set_01",
+    "source": "https://polyhaven.com/a/rock_moss_set_01",
+    "author": {
+      "Kless Gyzen": "All"
+    },
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "files": [
+      {
+        "path": "rock_moss_set_01/api_files.json",
+        "sha256": "c2f02d74fa1b5dfc25f5fcb443f8fcc8886f3fde759e28541e9fdd7463c5df25"
+      },
+      {
+        "path": "rock_moss_set_01/rock_moss_set_01.bin",
+        "sha256": "de8360e6175879aaf02c171911069cf5f1852547f9ca7f10e440085dbcc3315e"
+      },
+      {
+        "path": "rock_moss_set_01/rock_moss_set_01_1k.gltf",
+        "sha256": "c36675aca9c6b2be7785c2534cf413b03ec82a5a2a5407a2b1c0cdb0346c9727"
+      },
+      {
+        "path": "rock_moss_set_01/source.json",
+        "sha256": "718f50f81ff5b0fd37567d3fb50fcb612a1765945ebbe14303646f14609400e8"
+      },
+      {
+        "path": "rock_moss_set_01/textures/rock_moss_set_01_diff_1k.jpg",
+        "sha256": "40cea65d8aa4ee73a93b04af19963834d061eee9779c3fc2c1cba76eef812ccc"
+      },
+      {
+        "path": "rock_moss_set_01/textures/rock_moss_set_01_nor_gl_1k.jpg",
+        "sha256": "eb4aad3f207f1dc5b624d74ae240372171626a66912bd71adf7bd3e518181d6e"
+      },
+      {
+        "path": "rock_moss_set_01/textures/rock_moss_set_01_rough_1k.jpg",
+        "sha256": "4d6ec46623abd8e2cdb855f59c7ce31873ad61b36b60e4de579e9e776a497c6b"
+      }
+    ]
+  },
+  {
+    "id": "wood_planks_grey",
+    "source": "https://polyhaven.com/a/wood_planks_grey",
+    "author": {
+      "Rob Tuytel": "All"
+    },
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "files": [
+      {
+        "path": "wood_planks_grey/api_files.json",
+        "sha256": "f39f3dcadfb7b0840514d8e1802d4e1367e3c52cfcef64c26784958870525593"
+      },
+      {
+        "path": "wood_planks_grey/source.json",
+        "sha256": "3f45eb58b12164469e71939d03f80fa1cbb0c65cb9373ad2a2db46d5a45f4dbf"
+      },
+      {
+        "path": "wood_planks_grey/wood_planks_grey_Diffuse.jpg",
+        "sha256": "31bdd475c6f1520fccc34a6823bfab8ba61ce5fd6dd97a3d1d868c21295e1000"
+      },
+      {
+        "path": "wood_planks_grey/wood_planks_grey_nor_gl.jpg",
+        "sha256": "466b35df82e1af23ece3882bda9b272a25ab6b89876dbeb369faf2eb50b4cb3a"
+      },
+      {
+        "path": "wood_planks_grey/wood_planks_grey_Rough.jpg",
+        "sha256": "6df08068860c68dbdc1f5b37a69814bc981866ee9f60a9e3b9de67e498684039"
+      }
+    ]
+  },
+  {
+    "id": "stone_brick_wall_001",
+    "source": "https://polyhaven.com/a/stone_brick_wall_001",
+    "author": {
+      "Dimitrios Savva": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "files": [
+      {
+        "path": "stone_brick_wall_001/api_files.json",
+        "sha256": "03df114c1fa0c026c406d69229ca6555b53c0712c4c7446f7a9de998304aaa36"
+      },
+      {
+        "path": "stone_brick_wall_001/source.json",
+        "sha256": "05cbd2083978d6358dbc9291a37401618782cd2341418f030d33bf7c33b4ba1b"
+      },
+      {
+        "path": "stone_brick_wall_001/stone_brick_wall_001_Diffuse.jpg",
+        "sha256": "2374d49b7de8046226f67ff97eecc4f558ebe3372ec5b854f0211816af87c050"
+      },
+      {
+        "path": "stone_brick_wall_001/stone_brick_wall_001_nor_gl.jpg",
+        "sha256": "daa4abd418cc0bf1144c32e588fecbbd5f573e380a125a910f6c67b9725f20ab"
+      },
+      {
+        "path": "stone_brick_wall_001/stone_brick_wall_001_Rough.jpg",
+        "sha256": "e9c46951e101fa19d773528d362960cf42f5b7532de92cda7b9a1389651ab854"
+      }
+    ]
+  },
+  {
+    "id": "kloofendal_48d_partly_cloudy",
+    "source": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy",
+    "author": {
+      "Greg Zaal": "All"
+    },
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "files": [
+      {
+        "path": "kloofendal_48d_partly_cloudy/api_files.json",
+        "sha256": "e93cf1007eeac72f567936279e504d270a0f49c99e620a70103c6028c79e74b6"
+      },
+      {
+        "path": "kloofendal_48d_partly_cloudy/kloofendal_48d_partly_cloudy_1k.hdr",
+        "sha256": "5477b7dbb2aea4a6947cb36b96339c119f90bf36a03b039af3254b5e6a22896d"
+      },
+      {
+        "path": "kloofendal_48d_partly_cloudy/source.json",
+        "sha256": "480454e319a2f05ded9156ed2caa932ba1220d85379da75fedccf2d0a6e7373b"
+      }
+    ]
+  },
+  {
+    "id": "chinese_dragon_head",
+    "name": "Chinese Dragon Head",
+    "author": "CalWhite",
+    "source": "https://sketchfab.com/3d-models/chinese-dragon-head-217d9a108f12485088dcaf49b11d9ac0",
+    "license": "CC-BY-4.0",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/",
+    "download_via": "AllenAI Objaverse public release",
+    "modifications": "Simplified, clipped to remove the long bust and tall spikes, face shortened and widened, paint materials replaced, new antlers and ear carvings added, integrated with a redesigned continuous boat stem and neck. Original face UVs and normal detail retained.",
+    "files": [
+      {
+        "path": "chinese_dragon_head/chinese_dragon_head.glb",
+        "sha256": "da30fb8582869ec1a2eeac919d2157ce61cd7c28aae16f2a384275bfdfbf2e14"
+      },
+      {
+        "path": "chinese_dragon_head/source.json",
+        "sha256": "b1cf730e3ff55734abc7fa9ff7bfbe15f76e18f66b1fb8a32be516a1801b276f"
+      }
+    ]
+  },
+  {
+    "id": "makehuman_cc0",
+    "author": "MakeHuman Community / Data Collection AB / Joel Palmius / Jonas Hauquier",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "https://static.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.html",
+    "tool": "MPFB 2.0.18",
+    "modifications": "Asian adult male macro targets, interpolated clothing weights, IK seated and standing poses, mesh conversion; original rig preserved separately.",
+    "files": [
+      {
+        "path": "makehuman_cc0/athlete_rigged_cc0.blend",
+        "sha256": "70c522b546adb3eb5f1d7547d4c9051fbdfdf609510c164ed7bc50a7b2c7b3f0"
+      },
+      {
+        "path": "makehuman_cc0/clothes/male_casualsuit04/male_casualsuit04.mhclo",
+        "sha256": "8c1a2d3272cd51ba03f0840d593eddc6325d3d2c4c8529f8203d2c2cad3d0cef"
+      },
+      {
+        "path": "makehuman_cc0/clothes/male_casualsuit04/male_casualsuit04.mhmat",
+        "sha256": "0408dea995c10e078ab79a3b68fa3092bdf18d3241b74fa35d48fe5397b42430"
+      },
+      {
+        "path": "makehuman_cc0/clothes/male_casualsuit04/male_casualsuit04.obj",
+        "sha256": "9a56b7b1cb27589233dc048e8ccf1fd93d03f3a5c01a668f0e8a189ebdea7a34"
+      },
+      {
+        "path": "makehuman_cc0/clothes/male_casualsuit04/male_casualsuit04.thumb",
+        "sha256": "1424bac2dc95c2d6906bc0435b8de77ce71c25a35c97eece9c6c589944a2c683"
+      },
+      {
+        "path": "makehuman_cc0/clothes/male_casualsuit04/male_casualsuit04_ao.png",
+        "sha256": "0776e137bc8f37647c949b12384067d311df5fc7504d15af736e0647713c2754"
+      },
+      {
+        "path": "makehuman_cc0/clothes/male_casualsuit04/male_casualsuit04_diffuse.png",
+        "sha256": "eb33337f43b006159773ab2fdff1293f51f72c3d0d24c132c2272b4deff9bcbe"
+      },
+      {
+        "path": "makehuman_cc0/clothes/male_casualsuit04/male_casualsuit04_normal.png",
+        "sha256": "006c0c0dfecaeda1a749f737ac15bfc228ebb76dbbcbf9871993e267a545ca69"
+      },
+      {
+        "path": "makehuman_cc0/clothes/shoes02/shoes02.mhclo",
+        "sha256": "0d447fd6b7415d6b2603e91697336ee51ac2f00ef85878d6667e9acfb45a20fe"
+      },
+      {
+        "path": "makehuman_cc0/clothes/shoes02/shoes02.mhmat",
+        "sha256": "7f2cb19506784fbe22ba3f766f94bb13d1eee1712dd29ed10b926c5905bab924"
+      },
+      {
+        "path": "makehuman_cc0/clothes/shoes02/shoes02.mhw",
+        "sha256": "dba34894b93f102ea64d7ad21968894a9788c7a0770c066584a66a536a3e92b6"
+      },
+      {
+        "path": "makehuman_cc0/clothes/shoes02/shoes02.obj",
+        "sha256": "5726aabac42ff489998d0a769545dea013961bbb71b9c6024d75170181a98818"
+      },
+      {
+        "path": "makehuman_cc0/clothes/shoes02/shoes02.thumb",
+        "sha256": "0e41c095f5ff5a13c0d2b12a6c96d65d907137e1ae3fb120ff14300fc818015d"
+      },
+      {
+        "path": "makehuman_cc0/clothes/shoes02/shoes02_diffuse.png",
+        "sha256": "efef94ea34b0e0c2283095cb47a9e0389b55449c61a4f4972d0ad4d2bf06b4f0"
+      },
+      {
+        "path": "makehuman_cc0/eyebrows/eyebrow001/eyebrow001.mhclo",
+        "sha256": "54c8892c2ba577f4152d779ce1f20f7cd323beb8cbd9cb701796165c221b4f5b"
+      },
+      {
+        "path": "makehuman_cc0/eyebrows/eyebrow001/eyebrow001.mhmat",
+        "sha256": "976e5f4f1d3922d7a11c6e2db233f8b4584b068d00619d5749687e81c92d61fc"
+      },
+      {
+        "path": "makehuman_cc0/eyebrows/eyebrow001/eyebrow001.obj",
+        "sha256": "88b13146395133f3901715e11706cdfd293e5d6087ad7c5e01efe1485a26b513"
+      },
+      {
+        "path": "makehuman_cc0/eyebrows/eyebrow001/eyebrow001.png",
+        "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b"
+      },
+      {
+        "path": "makehuman_cc0/eyebrows/eyebrow001/eyebrow001.thumb",
+        "sha256": "98b68eccf50977ff00242a33eb1dc6e3eaf4cc262e1f6c4ceca5c1c564f6c745"
+      },
+      {
+        "path": "makehuman_cc0/eyes/low-poly/low-poly.mhclo",
+        "sha256": "68582e28e9176cba7cfcf35208f671b6201b8d1bc95c32decff61a3160ec34d8"
+      },
+      {
+        "path": "makehuman_cc0/eyes/low-poly/low-poly.obj",
+        "sha256": "783fe1e6331162c876520b4c2bed7a8ca06354ca15497e8ebd68bb1b59f4d3de"
+      },
+      {
+        "path": "makehuman_cc0/eyes/low-poly/low-poly.thumb",
+        "sha256": "27b09c5a2bd792671c99a00016ec836855278f199bc4753c3018f1ac73068c72"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/blue.mhmat",
+        "sha256": "bd9cab4d2f6ca54df6253c1adfbb1c82e0ee61057361d95449ade06a1b5669c4"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/blue.thumb",
+        "sha256": "5d7474af291a83b4b122ccd276b5ad10f9a4554efa940aad1d515363e22d7b6b"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/bluegreen.mhmat",
+        "sha256": "2dfb910b48da0e0739b44a8fa4728b3b351bf9b408034c6402a1b9c07915b884"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/bluegreen.thumb",
+        "sha256": "d6fcfe5b57d7b05f2f9453e11cefb7cb68352746a36613b030e069442e2eadcc"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/bluegreen_eye.png",
+        "sha256": "653b3154e67f67e118c22acd19c472aa7543e0c229209f687c3f7f669f191fd9"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/blue_eye.png",
+        "sha256": "572ddc93ab3e177100619ec7c00b2574540cfb382805afc2e450788117f6140c"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/brown.mhmat",
+        "sha256": "4abad93ce50541c08127721e77bce035640c9f16bed16cd0f5524b1cd5908465"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/brown.thumb",
+        "sha256": "5bd2de12f0c04d423ab00fa13f691a1879b944e63947e228117ddcce31f9cff9"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/brownlight.mhmat",
+        "sha256": "75ae6903fe51134ee6f10147dadad3cb1b355aecf8218213431fb6ddbb3ba71d"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/brownlight.thumb",
+        "sha256": "32722c2f00ea29b7cee7bc2b140db165ec724cd20d10d073e906b21b278bde26"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/brownlight_eye.png",
+        "sha256": "3f43a4de70e446186dac1760cfa01dfe36d530ed7564208455395b0ebcdf788a"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/brown_eye.png",
+        "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/deepblue.mhmat",
+        "sha256": "08f7a30d8cd8d264d21d755afcfdca3d28386e780b9e9fea11a662337e99d3a3"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/deepblue.thumb",
+        "sha256": "10b1fa542476d35dee4ac92b6f1a654ecf391d849231727a591820b895d8d815"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/deepblue_eye.png",
+        "sha256": "55ec9e3d06c8193e74fbbcea32ea474c100feaccef96556d9181e796fe2a7ea6"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/green.mhmat",
+        "sha256": "b3b512120d9f87f91cd34879ac17ad9f26eb6a250d92be52df8b19df5cc90113"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/green.thumb",
+        "sha256": "525ffdef4adb5a82ffe07814b1a46d017014fad571ae206bfeda970531560c10"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/green_eye.png",
+        "sha256": "b9864ac4f4fa484b24e18f6aba030d70dbc8820cbbacfbe63a974c76772c2009"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/grey.mhmat",
+        "sha256": "65c536157ef0550b2f8461a9526c726707533dc7cfe8a65abb9b9db0b4e6b25e"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/grey.thumb",
+        "sha256": "add8c7bd15edeccaa7612cb33d8311ae849d884b6ea062e18fa78de54128805d"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/grey_eye.png",
+        "sha256": "ecb05613126036a3d017880fabbd570501c5f14032c186462d8f6e2d719f6c4f"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/ice.mhmat",
+        "sha256": "4b2d2d10d9d887dc6f4dd2f66ff252a85b60ca2a30bc2b57672f83b758db776b"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/ice.thumb",
+        "sha256": "a8e150fb9fb901051a0dd6e753ec68d501ad5dc20e01adcdf6ac1f81657c5df9"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/ice_eye.png",
+        "sha256": "a5903596fe033371ba7130b5c8b2c09ce2f5d282d77557c21060ab8a778bf03d"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/lightblue.mhmat",
+        "sha256": "3bb470d56dfdf40b16e499578bf6ea2c4e0e7e27db4c5bd2adb47f760f5c5f34"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/lightblue.thumb",
+        "sha256": "4e70a6c6530469ead049980969944cf1c2860700907c9dfee0fbc87af7965c68"
+      },
+      {
+        "path": "makehuman_cc0/eyes/materials/lightblue_eye.png",
+        "sha256": "687c8f6d95a8550bcd4a34158f415d6bb376c0bb32e67d127bbb51e5fa469eef"
+      },
+      {
+        "path": "makehuman_cc0/hair/short01/short01.mhclo",
+        "sha256": "ae1ffaa98da5753b803b3a173bede4895d2215e6bb94763f3765a71f0e984f35"
+      },
+      {
+        "path": "makehuman_cc0/hair/short01/short01.mhmat",
+        "sha256": "01e2e12ce3f3d3c859225456660acadcdd27d4f4b4d888bcbd6f11998cadd975"
+      },
+      {
+        "path": "makehuman_cc0/hair/short01/short01.obj",
+        "sha256": "d998d8416f9b5d5591f1d756f4d292288d000a6951bc0f4d2e8e72727bbc44fa"
+      },
+      {
+        "path": "makehuman_cc0/hair/short01/short01.thumb",
+        "sha256": "7e942d29322841a07a8a3feaf438fb9efb6b54f5b733909cecc51e79dcaca995"
+      },
+      {
+        "path": "makehuman_cc0/hair/short01/short01_diffuse.png",
+        "sha256": "f34a0957184e3d1e911ed59245f874f8d4843f61ee44ff49f43edb4be0196949"
+      },
+      {
+        "path": "makehuman_cc0/skins/middleage_asian_male/middleage_asian_male.mhmat",
+        "sha256": "341a041eeb9c4bb51133fafb4d61e859a36dbd142c75c7cef4531606143c4e22"
+      },
+      {
+        "path": "makehuman_cc0/skins/middleage_asian_male/middleage_asian_male.thumb",
+        "sha256": "1797e3bb9c3d2bf0921eaa5052b9b135ff97607d9801046d04895d95dff8172f"
+      },
+      {
+        "path": "makehuman_cc0/skins/middleage_asian_male/middleage_lightskinned_male_diffuse2.png",
+        "sha256": "e897c4cc1b6ad5d10a7d2b2be92402feda4e772e6582dfaf0a1e8fc4621d8097"
+      }
+    ]
+  }
+]

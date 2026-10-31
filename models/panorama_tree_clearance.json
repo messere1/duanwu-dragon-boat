@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "translated_roots": [
+    "village_edge_tree_0",
+    "village_edge_tree_1",
+    "village_edge_tree_2",
+    "village_edge_tree_3",
+    "village_edge_tree_4",
+    "village_edge_tree_5",
+    "village_edge_tree_6",
+    "village_edge_tree_7",
+    "village_edge_tree_8",
+    "village_edge_tree_9",
+    "village_edge_tree_10",
+    "village_edge_tree_11",
+    "lane_tree_6",
+    "lane_tree_7"
+  ],
+  "translated_vertices": {
+    "village_edge_tree_0": 26478,
+    "village_edge_tree_1": 26478,
+    "village_edge_tree_2": 26478,
+    "village_edge_tree_3": 26478,
+    "village_edge_tree_4": 26478,
+    "village_edge_tree_5": 26478,
+    "village_edge_tree_6": 26478,
+    "village_edge_tree_7": 26478,
+    "village_edge_tree_8": 26478,
+    "village_edge_tree_9": 26478,
+    "village_edge_tree_10": 26478,
+    "village_edge_tree_11": 26478,
+    "lane_tree_6": 190835,
+    "lane_tree_7": 190835
+  },
+  "checks": [
+    "Former village-edge trees relocated outside expanded houses",
+    "OBJ records changed only by uniform translations in named tree groups",
+    "GLB tree roots and Blender transforms updated consistently"
+  ],
+  "glb_vs_scene_matrix_check": "PASS",
+  "scope": "Historical tree relocation before river refinement; current placement follows scene_layout.json."
+}

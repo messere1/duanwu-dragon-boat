@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "water_and_channel_samples": 903,
+  "boat_envelope_tests": 12012,
+  "minimum_vertical_bank_margin_metres": 1.5973709660169542,
+  "downstream_bridges_x": [
+    122,
+    164
+  ],
+  "camera_has_independent_spatial_route": true,
+  "planned_camera_building_visibility_tests": 105,
+  "accepted_boat_components_unchanged": true,
+  "animation_status": "planned, not yet implemented in OpenGL"
+}

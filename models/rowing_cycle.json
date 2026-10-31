@@ -1,0 +1,62 @@
+{
+  "frames": 40,
+  "vertices": 82806,
+  "materials": [
+    "open_human_seated_Human.short01",
+    "open_human_seated_Human.shoes02",
+    "open_human_seated_Human.male_casualsuit04",
+    "open_human_seated_Human.low-poly",
+    "open_human_seated_Human.eyebrow001",
+    "open_human_seated_Human.body",
+    "open_human_seated_Human.lips",
+    "open_human_seated_Human.fingernails",
+    "open_human_seated_Human.ears"
+  ],
+  "closed_cycle_max_error_m": 0.0,
+  "max_palm_target_error_m": 0.0001481602817454816,
+  "source": "MakeHuman CC0 rig; analytic paddle path + Blender arm/leg IK",
+  "phase_keys": [
+    [
+      0,
+      24,
+      -0.13,
+      0.1,
+      0
+    ],
+    [
+      0.1,
+      22,
+      -0.22,
+      0.06,
+      0
+    ],
+    [
+      0.5,
+      -20,
+      -0.2,
+      -0.1,
+      1
+    ],
+    [
+      0.64,
+      -25,
+      0.1,
+      -0.1,
+      17
+    ],
+    [
+      0.83,
+      3,
+      0.14,
+      0.03,
+      18
+    ],
+    [
+      1,
+      24,
+      -0.13,
+      0.1,
+      0
+    ]
+  ]
+}

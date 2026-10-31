@@ -1,0 +1,23 @@
+[
+  {
+    "file": "dragon_boat_red.obj",
+    "meshes": 322,
+    "triangles_after_import": 503398,
+    "images_loaded": 14,
+    "status": "PASS"
+  },
+  {
+    "file": "dragon_boat_jade.obj",
+    "meshes": 322,
+    "triangles_after_import": 503398,
+    "images_loaded": 15,
+    "status": "PASS"
+  },
+  {
+    "file": "scene_preview.obj",
+    "meshes": 25315,
+    "triangles_after_import": 7943521,
+    "images_loaded": 38,
+    "status": "PASS"
+  }
+]

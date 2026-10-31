@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "renderer": "NVIDIA GeForce RTX 3050 4GB Laptop GPU/PCIe/SSE2",
+  "obj_triangles": 8221685,
+  "material_batches": 715,
+  "checked_frames": 34,
+  "opengl_errors": 0,
+  "median_warm_frame_ms": 38.106,
+  "full_timeline_seconds": 26,
+  "race_samples": [
+    [
+      5.0,
+      20.7911,
+      18.4115,
+      4.93189,
+      4.59817
+    ],
+    [
+      15.0,
+      68.5148,
+      69.6868,
+      4.64243,
+      4.74836
+    ],
+    [
+      26.0,
+      122.299,
+      121.984,
+      5.29634,
+      4.83962
+    ]
+  ],
+  "pose_cycle_frames": 40,
+  "drumming_pose_frames": 40,
+  "drumming_contact_samples": [
+    [
+      0.1,
+      1.67,
+      2.25636
+    ],
+    [
+      0.64,
+      2.28495,
+      2.1954
+    ],
+    [
+      1.1,
+      2.25636,
+      1.67
+    ]
+  ],
+  "drumming_palm_error_m": 0.00019999504551574974,
+  "checks": [
+    "Seated stern-facing drummer, alternating beat contacts, rebound and palm IK rendered",
+    "OBJ scene and material images really rendered",
+    "Texture toggle changes scene pixels",
+    "PNG readback retains color channels",
+    "Keyboard translation/rotation/scale and mouse pan/look assertions passed",
+    "Additional OBJ imported into GPU buffers",
+    "Fixed-step complete 26-second boat and separate drone update passed",
+    "Catch / drive / recovery poses rendered with synchronized 24 paddles and IK-baked crew",
+    "Lead changes verified at 5, 15 and 26 seconds; speed integrated continuously",
+    "Wind-driven cloth rendered with pinned pole edge",
+    "Five-stage independent camera, smooth endpoint stop and safe framing",
+    "Complete real-time rendered playback to 26 seconds, six screenshot checkpoints",
+    "Final scene ray audit checks every 1/60 second against buildings/bridges/shore",
+    "Frustum culling preserves every scene pixel at the comparison camera",
+    "Shared 3D vegetation and village geometry/material dependencies checked",
+    "Head variation does not affect fingers throughout both interpolated pose cycles"
+  ],
+  "limitation": "Authored kinematic racing with analytic surface wakes, not a hydrodynamic solver. Filtered directional shadows and 4x MSAA enabled. Vegetation belts use shared 3D tree geometry; analytic wind and wakes are not cloth/fluid solvers.",
+  "real_playthrough_frames": 537,
+  "real_playthrough_wall_seconds": 28.0756,
+  "real_playthrough_checkpoints": 6,
+  "camera_geometry_audit": {
+    "camera_samples": 1561,
+    "boat_visibility_rays": 12488,
+    "camera_surface_clearance_m": 3.2523128986358643,
+    "boat_bank_margin_m": 1.020362983222591,
+    "obstruction_count": 0
+  },
+  "flag_pole_edge_pinned": true,
+  "shadow_map_size": 4096,
+  "msaa_samples": 4,
+  "shadow_toggle_image_delta": 13.968073593073592,
+  "landscape_tree_count": 216,
+  "culling_scene_pixel_difference": 0,
+  "static_triangles_culling_on_off": [
+    15158925,
+    24985069
+  ],
+  "tree_prototype_triangles": 78374,
+  "new_village_detail_triangles": 35746,
+  "real_playthrough_median_frame_ms": 35.988,
+  "understory_triangles": 862098,
+  "shrub_clumps": 777,
+  "bamboo_groves": 14,
+  "mountain_geometry_triangles": 764811,
+  "mountain_support": {
+    "status": "PASS",
+    "houses_checked": 85,
+    "house_matrix_max_error": 0.0,
+    "ground_support_samples": 425,
+    "maximum_ground_support_change_m": 0.0,
+    "rigid_trees_snapped": 86,
+    "shared_trees_snapped": 216,
+    "method": "Old/new triangle BVH ground difference preserves original trunk planting depth"
+  }
+}

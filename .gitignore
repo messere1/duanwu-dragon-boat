@@ -1,0 +1,39 @@
+# Generated caches and compiler output
+/cache/
+/bin/
+/intermediate/
+/.vs/
+/build/
+/out/
+/CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.user
+*.suo
+*.pdb
+*.ilk
+*.idb
+*.tlog/
+*.vcxproj.filters
+
+# Temporary exports and historical generated checksums
+__pycache__/
+*.py[cod]
+*.blend[1-9]
+*.pending
+*.pending.*
+*.clean
+/checksums.sha256
+/results/*.obj
+/results/*.log
+!/results/runtime.log
+!/results/playthrough.log
+
+# Local secrets and machine configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db

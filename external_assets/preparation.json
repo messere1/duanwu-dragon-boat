@@ -1,0 +1,32 @@
+[
+  {
+    "asset": "open_head",
+    "meshes": 6,
+    "triangles": 71912
+  },
+  {
+    "asset": "open_tree",
+    "meshes": 1,
+    "triangles": 78374
+  },
+  {
+    "asset": "open_rock",
+    "meshes": 1,
+    "triangles": 6050
+  },
+  {
+    "asset": "open_human_seated",
+    "meshes": 6,
+    "triangles": 27602
+  },
+  {
+    "asset": "open_human_standing",
+    "meshes": 6,
+    "triangles": 27602
+  },
+  {
+    "asset": "open_human_drummer",
+    "meshes": 6,
+    "triangles": 27602
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "frames": 40,
+  "vertices": 82806,
+  "materials": [
+    "open_human_seated_Human.short01",
+    "open_human_seated_Human.shoes02",
+    "open_human_seated_Human.male_casualsuit04",
+    "open_human_seated_Human.low-poly",
+    "open_human_seated_Human.eyebrow001",
+    "open_human_seated_Human.body",
+    "open_human_seated_Human.lips",
+    "open_human_seated_Human.fingernails",
+    "open_human_seated_Human.ears"
+  ],
+  "closed_cycle_max_error_m": 0.0,
+  "max_palm_target_error_m": 0.00019999504551574974,
+  "source": "MakeHuman CC0 rig; analytic grip path + Blender arm/leg IK",
+  "phase_keys": [
+    [
+      0,
+      28,
+      0.04
+    ],
+    [
+      0.05,
+      0,
+      0
+    ],
+    [
+      0.1,
+      20,
+      0.035
+    ],
+    [
+      0.32,
+      58,
+      0.11
+    ],
+    [
+      0.65,
+      54,
+      0.1
+    ],
+    [
+      0.88,
+      48,
+      0.08
+    ],
+    [
+      1,
+      28,
+      0.04
+    ]
+  ]
+}

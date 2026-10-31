@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "file": "dragonboat_scene.glb",
+  "meshes": 14174,
+  "primitives": 14189,
+  "mesh_triangles_before_instancing": 3348654,
+  "triangles_after_node_instancing": 7943534,
+  "nodes": 25752,
+  "embedded_images": 46,
+  "checks": [
+    "GLB length and chunks",
+    "all position/normal/UV buffers finite and bounded",
+    "triangle indices",
+    "material references",
+    "embedded images",
+    "node references",
+    "unlit photographic sky"
+  ]
+}

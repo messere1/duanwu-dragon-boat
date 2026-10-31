@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "assets_checked": 20,
+  "unchanged_assets": [
+    "boat_hull_red.obj",
+    "dragon_head_red.obj",
+    "dragon_tail_red.obj",
+    "boat_hull_jade.obj",
+    "dragon_head_jade.obj",
+    "dragon_tail_jade.obj",
+    "paddle.obj",
+    "paddle_jade.obj",
+    "rower_red.obj",
+    "rower_jade.obj",
+    "helmsman_red.obj",
+    "helmsman_jade.obj",
+    "drum.obj",
+    "pennant_red.obj",
+    "pennant_jade.obj",
+    "drummer_red.obj",
+    "drummer_jade.obj",
+    "drummer_stool.obj",
+    "dragon_boat_red.obj",
+    "dragon_boat_jade.obj"
+  ],
+  "checks": [
+    "SHA-256 of boat parts and assembled boats unchanged by panorama extension"
+  ]
+}

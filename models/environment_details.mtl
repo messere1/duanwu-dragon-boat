@@ -1,0 +1,5 @@
+newmtl rural_tree_atlas
+Kd 1 1 1
+Ks 0 0 0
+Ns 4
+map_Kd ../textures/rural_tree_atlas.png

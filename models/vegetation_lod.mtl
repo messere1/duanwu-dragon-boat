@@ -1,0 +1,15 @@
+newmtl lod_tree_0.001
+Kd 0.88 0.95 0.82
+Ks 0.025 0.025 0.025
+Ns 8
+map_Kd ../textures/lod_tree_color_0.png
+newmtl lod_tree_1.001
+Kd 0.88 0.95 0.82
+Ks 0.025 0.025 0.025
+Ns 8
+map_Kd ../textures/lod_tree_color_1.png
+newmtl lod_tree_2.001
+Kd 0.88 0.95 0.82
+Ks 0.025 0.025 0.025
+Ns 8
+map_Kd ../textures/lod_tree_color_2.png

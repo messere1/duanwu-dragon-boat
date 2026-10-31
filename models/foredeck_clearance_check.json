@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "fitted_foredeck_plank",
+      "end_x": 3.9800000000000137,
+      "outer_edge_y": 0.5069999935626983,
+      "available_hull_width_at_plank_bottom": 0.5253760438217959
+    },
+    {
+      "name": "fitted_foredeck_plank.001",
+      "end_x": 4.355000000000007,
+      "outer_edge_y": 0.3609999957084656,
+      "available_hull_width_at_plank_bottom": 0.37732155003051127
+    },
+    {
+      "name": "fitted_foredeck_plank.002",
+      "end_x": 4.625000000000001,
+      "outer_edge_y": 0.2149999978542328,
+      "available_hull_width_at_plank_bottom": 0.23712296384264697
+    },
+    {
+      "name": "fitted_foredeck_plank.003",
+      "end_x": 4.67,
+      "outer_edge_y": 0.069,
+      "available_hull_width_at_plank_bottom": 0.21207068374682575
+    },
+    {
+      "name": "fitted_foredeck_plank.004",
+      "end_x": 4.625000000000001,
+      "outer_edge_y": 0.2149999978542328,
+      "available_hull_width_at_plank_bottom": 0.23712296384264697
+    },
+    {
+      "name": "fitted_foredeck_plank.005",
+      "end_x": 4.355000000000007,
+      "outer_edge_y": 0.3609999957084656,
+      "available_hull_width_at_plank_bottom": 0.37732155003051127
+    },
+    {
+      "name": "fitted_foredeck_plank.006",
+      "end_x": 3.9800000000000137,
+      "outer_edge_y": 0.5069999935626983,
+      "available_hull_width_at_plank_bottom": 0.5253760438217959
+    },
+    {
+      "name": "fitted_foredeck_plank.007",
+      "end_x": 3.9800000000000137,
+      "outer_edge_y": 0.5069999935626983,
+      "available_hull_width_at_plank_bottom": 0.5253760438217959
+    },
+    {
+      "name": "fitted_foredeck_plank.008",
+      "end_x": 4.355000000000007,
+      "outer_edge_y": 0.3609999957084656,
+      "available_hull_width_at_plank_bottom": 0.37732155003051127
+    },
+    {
+      "name": "fitted_foredeck_plank.009",
+      "end_x": 4.625000000000001,
+      "outer_edge_y": 0.2149999978542328,
+      "available_hull_width_at_plank_bottom": 0.23712296384264697
+    },
+    {
+      "name": "fitted_foredeck_plank.010",
+      "end_x": 4.67,
+      "outer_edge_y": 0.069,
+      "available_hull_width_at_plank_bottom": 0.21207068374682575
+    },
+    {
+      "name": "fitted_foredeck_plank.011",
+      "end_x": 4.625000000000001,
+      "outer_edge_y": 0.2149999978542328,
+      "available_hull_width_at_plank_bottom": 0.23712296384264697
+    },
+    {
+      "name": "fitted_foredeck_plank.012",
+      "end_x": 4.355000000000007,
+      "outer_edge_y": 0.3609999957084656,
+      "available_hull_width_at_plank_bottom": 0.37732155003051127
+    },
+    {
+      "name": "fitted_foredeck_plank.013",
+      "end_x": 3.9800000000000137,
+      "outer_edge_y": 0.5069999935626983,
+      "available_hull_width_at_plank_bottom": 0.5253760438217959
+    },
+    {
+      "name": "jade_boat_hull__fitted_foredeck_plank.007",
+      "end_x": 3.9800000000000137,
+      "outer_edge_y": 0.5069999935626983,
+      "available_hull_width_at_plank_bottom": 0.5253760438217959
+    },
+    {
+      "name": "jade_boat_hull__fitted_foredeck_plank.008",
+      "end_x": 4.355000000000007,
+      "outer_edge_y": 0.3609999957084656,
+      "available_hull_width_at_plank_bottom": 0.37732155003051127
+    },
+    {
+      "name": "jade_boat_hull__fitted_foredeck_plank.009",
+      "end_x": 4.625000000000001,
+      "outer_edge_y": 0.2149999978542328,
+      "available_hull_width_at_plank_bottom": 0.23712296384264697
+    },
+    {
+      "name": "jade_boat_hull__fitted_foredeck_plank.010",
+      "end_x": 4.67,
+      "outer_edge_y": 0.069,
+      "available_hull_width_at_plank_bottom": 0.21207068374682575
+    },
+    {
+      "name": "jade_boat_hull__fitted_foredeck_plank.011",
+      "end_x": 4.625000000000001,
+      "outer_edge_y": 0.2149999978542328,
+      "available_hull_width_at_plank_bottom": 0.23712296384264697
+    },
+    {
+      "name": "jade_boat_hull__fitted_foredeck_plank.012",
+      "end_x": 4.355000000000007,
+      "outer_edge_y": 0.3609999957084656,
+      "available_hull_width_at_plank_bottom": 0.37732155003051127
+    },
+    {
+      "name": "jade_boat_hull__fitted_foredeck_plank.013",
+      "end_x": 3.9800000000000137,
+      "outer_edge_y": 0.5069999935626983,
+      "available_hull_width_at_plank_bottom": 0.5253760438217959
+    },
+    {
+      "name": "red_boat_hull__fitted_foredeck_plank",
+      "end_x": 3.9800000000000137,
+      "outer_edge_y": 0.5069999935626983,
+      "available_hull_width_at_plank_bottom": 0.5253760438217959
+    },
+    {
+      "name": "red_boat_hull__fitted_foredeck_plank.001",
+      "end_x": 4.355000000000007,
+      "outer_edge_y": 0.3609999957084656,
+      "available_hull_width_at_plank_bottom": 0.37732155003051127
+    },
+    {
+      "name": "red_boat_hull__fitted_foredeck_plank.002",
+      "end_x": 4.625000000000001,
+      "outer_edge_y": 0.2149999978542328,
+      "available_hull_width_at_plank_bottom": 0.23712296384264697
+    },
+    {
+      "name": "red_boat_hull__fitted_foredeck_plank.003",
+      "end_x": 4.67,
+      "outer_edge_y": 0.069,
+      "available_hull_width_at_plank_bottom": 0.21207068374682575
+    },
+    {
+      "name": "red_boat_hull__fitted_foredeck_plank.004",
+      "end_x": 4.625000000000001,
+      "outer_edge_y": 0.2149999978542328,
+      "available_hull_width_at_plank_bottom": 0.23712296384264697
+    },
+    {
+      "name": "red_boat_hull__fitted_foredeck_plank.005",
+      "end_x": 4.355000000000007,
+      "outer_edge_y": 0.3609999957084656,
+      "available_hull_width_at_plank_bottom": 0.37732155003051127
+    },
+    {
+      "name": "red_boat_hull__fitted_foredeck_plank.006",
+      "end_x": 3.9800000000000137,
+      "outer_edge_y": 0.5069999935626983,
+      "available_hull_width_at_plank_bottom": 0.5253760438217959
+    }
+  ]
+}

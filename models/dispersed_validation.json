@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "inland_houses": 49,
+  "clusters": 8,
+  "irregular_fields": 59,
+  "parcel_area_range_m2": [
+    2.8957169876272246,
+    675.6376493584011
+  ],
+  "house_ground_clearance_range_m": [
+    0.187,
+    0.195
+  ],
+  "checks": [
+    "Settlement extends inland on both banks",
+    "Eight dispersed clusters",
+    "Low foundations touch graded hillside terraces",
+    "Old rectangular field carpet removed",
+    "Convex irregular parcels vary in size and edge count"
+  ]
+}
