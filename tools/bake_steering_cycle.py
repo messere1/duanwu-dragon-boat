@@ -1,6 +1,6 @@
 """Bake a standing helmsman linked to an aft/outboard steering oar.
 
-The ankle targets remain planted; wrist targets share the runtime oar path.
+The ankle targets remain planted; surface-fitted palm sockets share the oar path.
 Exports a closed pose sequence plus an editable Blender IK action.
 """
 import bpy, math, struct, json, sys
@@ -12,6 +12,7 @@ DRUM=False
 ROLE='steering'
 sys.path.insert(0,str(ROOT/'tools'))
 from steering_motion import steering_frame
+from steering_grasp import finger_pose,set_grasp_target,actual_socket,socket_local
 bpy.ops.wm.read_factory_settings(use_empty=True)
 with bpy.data.libraries.load(str(ROOT/'external_assets/makehuman_cc0/athlete_rigged_cc0.blend'), link=False) as (src,dst):
     dst.objects=src.objects
@@ -26,8 +27,7 @@ CV=Matrix(((1,0,0,0),(0,0,1,0),(0,-1,0,0),(0,0,0,1)))
 for b in rig.pose.bones:
     b.matrix_basis=Matrix.Identity(4)
     for c in list(b.constraints): b.constraints.remove(c)
-    if b.name.startswith('finger'):
-        b.rotation_mode='XYZ'; b.rotation_euler[0]=.65
+finger_pose(rig)
 
 def ik(bone, point, chain, pole=None):
     target=bpy.data.objects.new('target_'+bone,None); bpy.context.collection.objects.link(target)
@@ -38,7 +38,7 @@ def ik(bone, point, chain, pole=None):
         c.pole_target=p; c.pole_angle=-math.pi/2
     return target
 
-hands={}; hand_bones={}
+hands={}; hand_bones={};hand_sides={}
 for side,s in [('L',1),('R',-1)]:
     shoulder=transform@rig.data.bones['upperarm01.'+side].head_local
     # The outside hand holds the shaft; the inside hand holds the T grip.
@@ -46,31 +46,27 @@ for side,s in [('L',1),('R',-1)]:
     bone=('wrist.' if 'wrist.'+side in rig.pose.bones else 'hand.')+side
     if bone not in rig.pose.bones: bone='lowerarm02.'+side
     hands[key]=ik(bone,(.3,.3,.7),7 if bone.startswith(('wrist','hand')) else 6)
-    hand_bones[key]=bone
+    hand_bones[key]=bone;hand_sides[key]=side
+    rig.pose.bones[bone].constraints[-1].use_rotation=True
+    rig.pose.bones[bone].constraints[-1].orient_weight=1
     ik('lowerleg02.'+side,transform@rig.data.bones['lowerleg02.'+side].tail_local,4)
 
-def steering_palm(key,phase):
-    upper,lower,_=steering_frame(phase)
-    x,y,z=upper if key=='top' else lower
-    return Vector((x+4.12,-z,y-.91))
-
-frames=[]; topology=[]; names=[]; errors=[]; samples=[]; F=40
+frames=[]; topology=[]; names=[]; errors=[]; samples=[]; F=40;hand_indices={'L':[],'R':[]}
 for fi in range(F+1):
     phase=fi/F
     for b in rig.pose.bones:
         if not b.name.startswith('finger'): b.matrix_basis=Matrix.Identity(4)
-    # Hinge the torso from the hips; leg IK keeps the seated feet in place.
+    # Hinge the torso from the hips; ankle IK keeps both feet planted.
     lean=math.radians(5+3*math.sin(phase*2*math.pi))
     spine=rig.pose.bones.get('spine03')
     if spine:
         pivot=transform@spine.bone.head_local
         bend=Matrix.Translation(pivot)@Matrix.Rotation(math.radians(-18+4*math.sin(phase*2*math.pi)),4,'Z')@Matrix.Rotation(lean,4,'Y')@Matrix.Translation(-pivot)
         spine.matrix=inv@bend@transform@spine.bone.matrix_local
-    for key,z in [('top',.12),('bottom',-.30)]:
-        hands[key].location=inv@steering_palm(key,phase)
+    targets={key:set_grasp_target(rig,hands[key],hand_sides[key],key,phase,CV@transform) for key in hands}
     bpy.context.view_layer.update(); dg=bpy.context.evaluated_depsgraph_get()
-    errors.append({key:(transform@rig.pose.bones[hand_bones[key]].tail-transform@hands[key].location).length for key in hands})
-    points=[CV@(transform@rig.pose.bones[hand_bones[key]].tail)+Vector((-4.12,.91,0)) for key in ('top','bottom')]
+    errors.append({key:(actual_socket(rig,hand_sides[key],CV@transform)-targets[key]).length for key in hands})
+    points=[actual_socket(rig,hand_sides[key],CV@transform) for key in ('top','bottom')]
     samples.append([phase,*points[0],*points[1]])
     packed=[]; parts=[]
     for mi,o in enumerate(meshes):
@@ -81,6 +77,10 @@ for fi in range(F+1):
             material=o.data.materials[tri.material_index]
             name='open_human_seated_'+material.name
             if fi==0 and name not in names: names.append(name)
+            if fi==0:
+                for side in hand_indices:
+                    groups={g.index for g in o.vertex_groups if g.name.endswith('.'+side) and g.name.startswith(('wrist','finger'))}
+                    if min(sum(g.weight for g in mesh.vertices[i].groups if g.group in groups) for i in tri.vertices)>.20:hand_indices[side].append(len(packed))
             for li in tri.loops:
                 loop=mesh.loops[li]; p=xf@mesh.vertices[loop.vertex_index].co; n=(normal@loop.normal).normalized()
                 uv=mesh.uv_layers.active.data[li].uv if mesh.uv_layers.active else (0,0)
@@ -108,7 +108,8 @@ assert closure<.0001,closure
 max_error=max(v for row in errors for v in row.values())
 assert max_error<.002,max_error
 pending.replace(out)
-(ROOT/('models/'+ROLE+'_cycle.json')).write_text(json.dumps({'frames':F,'vertices':count,'materials':names,'closed_cycle_max_error_m':closure,'max_palm_target_error_m':max_error,'source':'MakeHuman CC0 standing rig; linked steering oar, wrist IK, planted ankle targets','phase_keys':'4.2 second steering correction cycle; both hands follow the same rigid oar'},ensure_ascii=False,indent=2),encoding='utf8')
+(ROOT/('models/'+ROLE+'_cycle.json')).write_text(json.dumps({'frames':F,'vertices':count,'materials':names,'closed_cycle_max_error_m':closure,'max_palm_target_error_m':max_error,'grip_model':'steering_oar.obj; 24 mm round T grip, 24.57 mm shaft; oriented surface-fitted palm sockets','source':'MakeHuman CC0 standing rig; linked steering oar, oriented wrist IK, planted ankle targets','phase_keys':'4.2 second steering correction cycle; both hands follow the same rigid oar'},ensure_ascii=False,indent=2),encoding='utf8')
+(ROOT/'models/steering_hand_indices.json').write_text(json.dumps(hand_indices),encoding='utf8')
 print('BAKED',out,closure,flush=True)
 
 (ROOT/'models/steering_samples.csv').write_text('phase,upper_x,upper_y,upper_z,lower_x,lower_y,lower_z\n'+'\n'.join(','.join(f'{v:.9f}' for v in row) for row in samples)+'\n',encoding='utf8')

@@ -7,8 +7,9 @@ def read_obj_mesh(name):
   if line.startswith('v '):vs.append(tuple(map(float,line.split()[1:])))
   elif line.startswith('f '):fs.append(tuple(int(t.split('/')[0])-1 for t in line.split()[1:]))
  return vs,fs
-v,f=read_obj_mesh('paddle.obj');data=bpy.data.meshes.new('steering_oar_reference_mesh');data.from_pydata(v,[],f);data.update();oar=bpy.data.objects.new('steering_oar_animated',data);bpy.context.collection.objects.link(oar);oar.rotation_mode='QUATERNION'
+v,f=read_obj_mesh('steering_oar.obj');data=bpy.data.meshes.new('steering_oar_reference_mesh');data.from_pydata(v,[],f);data.update();oar=bpy.data.objects.new('steering_oar_animated',data);bpy.context.collection.objects.link(oar);oar.rotation_mode='QUATERNION'
 wood=bpy.data.materials.new('steering_oar_wood');wood.diffuse_color=(.27,.18,.095,1);data.materials.append(wood)
+for side in ('L','R'):rig['grip_socket_'+side]=list(socket_local(rig,side))
 spine=rig.pose.bones.get('spine03');spine.rotation_mode='QUATERNION'
 for fi in range(F+1):
  phase=fi/F;frame=1+phase*126
@@ -17,7 +18,8 @@ for fi in range(F+1):
  pivot=transform@spine.bone.head_local;lean=math.radians(5+3*math.sin(phase*math.tau));yaw=math.radians(-18+4*math.sin(phase*math.tau))
  spine.matrix=inv@Matrix.Translation(pivot)@Matrix.Rotation(yaw,4,'Z')@Matrix.Rotation(lean,4,'Y')@Matrix.Translation(-pivot)@transform@spine.bone.matrix_local
  for key in hands:
-  hands[key].location=inv@steering_palm(key,phase);hands[key].keyframe_insert(data_path='location',frame=frame)
+  set_grasp_target(rig,hands[key],hand_sides[key],key,phase,CV@transform)
+  hands[key].keyframe_insert(data_path='location',frame=frame);hands[key].keyframe_insert(data_path='rotation_quaternion',frame=frame)
  for prop in ('location','rotation_quaternion','scale'):spine.keyframe_insert(data_path=prop,frame=frame)
  g,h,d=map(Vector,steering_frame(phase));x=d.cross(Vector((0,0,1))).normalized();z=x.cross(d);p=g-d*(.12*1.95)
  model=Matrix(((x.x*.9,d.x*1.95,z.x*.9,p.x),(x.y*.9,d.y*1.95,z.y*.9,p.y),(x.z*.9,d.z*1.95,z.z*.9,p.z),(0,0,0,1)))

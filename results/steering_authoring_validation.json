@@ -3,43 +3,43 @@
   "timeline_frames": 127,
   "fps": 30,
   "cycle_seconds": 4.2,
-  "maximum_palm_error_m": 4.502297514602431e-05,
+  "maximum_palm_error_m": 4.086776506180245e-05,
   "samples": [
     {
       "phase": 0,
-      "palm_error_m": 1.8585589410638415e-05
+      "palm_error_m": 4.086776506180245e-05
     },
     {
       "phase": 0.125,
-      "palm_error_m": 1.0460615158081055e-05
+      "palm_error_m": 8.043811888447816e-06
     },
     {
       "phase": 0.25,
-      "palm_error_m": 6.804399520938481e-06
+      "palm_error_m": 1.069716574053545e-05
     },
     {
       "phase": 0.375,
-      "palm_error_m": 9.589542691937498e-06
+      "palm_error_m": 1.2403818232808565e-05
     },
     {
       "phase": 0.5,
-      "palm_error_m": 2.274901282126174e-05
+      "palm_error_m": 1.0894165472051047e-05
     },
     {
       "phase": 0.625,
-      "palm_error_m": 4.502297514602431e-05
+      "palm_error_m": 2.48001167754094e-05
     },
     {
       "phase": 0.75,
-      "palm_error_m": 1.67966692728322e-05
+      "palm_error_m": 1.8817800894554133e-05
     },
     {
       "phase": 0.875,
-      "palm_error_m": 1.7617281847484036e-05
+      "palm_error_m": 2.3451398062463034e-05
     },
     {
       "phase": 1,
-      "palm_error_m": 1.8585589410638415e-05
+      "palm_error_m": 4.086776506180245e-05
     }
   ]
 }

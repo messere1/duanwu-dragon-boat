@@ -5,7 +5,7 @@
   "material_batches": 719,
   "checked_frames": 36,
   "opengl_errors": 0,
-  "median_warm_frame_ms": 40.621,
+  "median_warm_frame_ms": 43.457,
   "full_timeline_seconds": 26,
   "race_samples": [
     [
@@ -69,11 +69,12 @@
     "Head variation does not affect fingers throughout both interpolated pose cycles",
     "Both helmsmen animate with linked steering-oar grips and planted feet",
     "Actual interpolated steering geometry checked against torso and both hulls",
-    "Editable steering rig and keyed oar palms verified"
+    "Editable steering rig and keyed oar palms verified",
+    "Palm/finger surfaces at both grips checked at 160 interpolated phases without contact-region exemptions"
   ],
   "limitation": "Authored kinematic racing with analytic surface wakes, not a hydrodynamic solver. Filtered directional shadows and 4x MSAA enabled. Vegetation belts use shared 3D tree geometry; analytic wind and wakes are not cloth/fluid solvers.",
-  "real_playthrough_frames": 507,
-  "real_playthrough_wall_seconds": 28.0015,
+  "real_playthrough_frames": 501,
+  "real_playthrough_wall_seconds": 27.9913,
   "real_playthrough_checkpoints": 6,
   "camera_geometry_audit": {
     "camera_samples": 1561,
@@ -85,7 +86,7 @@
   "flag_pole_edge_pinned": true,
   "shadow_map_size": 4096,
   "msaa_samples": 4,
-  "shadow_toggle_image_delta": 13.978835678210679,
+  "shadow_toggle_image_delta": 13.975593434343434,
   "landscape_tree_count": 216,
   "culling_scene_pixel_difference": 0,
   "static_triangles_culling_on_off": [
@@ -94,7 +95,7 @@
   ],
   "tree_prototype_triangles": 78374,
   "new_village_detail_triangles": 35746,
-  "real_playthrough_median_frame_ms": 40.207,
+  "real_playthrough_median_frame_ms": 40.121,
   "understory_triangles": 862098,
   "shrub_clumps": 777,
   "bamboo_groves": 14,
@@ -110,13 +111,19 @@
     "method": "Old/new triangle BVH ground difference preserves original trunk planting depth"
   },
   "steering": {
+    "grip_surface_check": {
+      "interpolated_phases": 160,
+      "minimum_surface_gap_m": 0.00017046273289387896,
+      "maximum_surface_gap_m": 0.0007371373881868287,
+      "maximum_penetration_m": 0
+    },
     "pose_frames": 40,
-    "max_palm_target_error_m": 5.669853259505537e-05,
+    "max_palm_target_error_m": 6.216162231121095e-05,
     "collision_checks": 80,
     "hull_overlap_count": 0,
     "body_contact_count": 0,
     "feet_vertex_motion_m": 0.0,
-    "character_vertex_motion_m": 0.2137989103794098,
+    "character_vertex_motion_m": 0.220705047249794,
     "editable_source_validated": true,
     "environment_trajectory_samples": 3122,
     "environment_contacts": 0

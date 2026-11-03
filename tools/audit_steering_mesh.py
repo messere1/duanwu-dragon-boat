@@ -19,14 +19,14 @@ for team in ('red','jade'):
  for name in ('boat_hull_'+team+'.obj','dragon_tail_'+team+'.obj'):
   a,b=obj(name);start=len(vs);vs+=a;fs += [tuple(i+start for i in f) for f in b]
  hulls[team]=BVHTree.FromPolygons(vs,fs)
-vp,fp=obj('paddle.obj');paddle=np.asarray(vp)
+vp,fp=obj('steering_oar.obj');paddle=np.asarray(vp)
 with (R/'models/steering_cycle.bin').open('rb') as f:
  magic,F,N,M=struct.unpack('<8sIII',f.read(20));assert magic==b'DBPOSE01';names=[]
  for i in range(M):
   size=struct.unpack('<I',f.read(4))[0];names.append(f.read(size).decode())
  ids=np.frombuffer(f.read(N*4),dtype='<u4');offset=f.tell()
 poses=np.memmap(R/'models/steering_cycle.bin',dtype='<f4',mode='r',offset=offset,shape=(F,N,8))
-triangles=[(i,i+1,i+2) for i in range(0,N,3)];radius=.021*.90;body_min=1e9;hull_min=1e9;overlaps=[];body_hits=[];foot_change=0.;palm_error=0.;tip_levels=[];body_motion=0.
+triangles=[(i,i+1,i+2) for i in range(0,N,3)];radius=.021*.90*.65;body_min=1e9;hull_min=1e9;overlaps=[];body_hits=[];foot_change=0.;palm_error=0.;tip_levels=[];body_motion=0.
 shoe=ids==next(i for i,n in enumerate(names) if 'shoes02' in n);base_feet=poses[0,shoe,:3].copy()
 for k in range(80):
  phase=k/80;index=phase*F;a=int(index);b=(a+1)%F;t=index-a
@@ -53,6 +53,6 @@ for k in range(80):
   near,normal,_,gap=bvh.find_nearest(p);body_min=min(body_min,gap)
   if gap<radius+.003:body_hits.append(dict(phase=phase,shaft_distance=float(distance),clearance=gap,point=list(p)))
  print('STEER_AUDIT',k,'body_gap',round(body_min,5),'hull_pairs',len(overlaps),flush=True)
-report=dict(status='PASS' if not overlaps and not body_hits and foot_change<.012 and body_motion>.03 else 'FAIL',pose_samples=80,maximum_character_vertex_motion_m=body_motion,both_hulls_checked=True,oar_hull_triangle_overlaps=overlaps,shaft_body_contacts_outside_grips=body_hits[:25],shaft_body_contact_count=len(body_hits),minimum_shaft_body_surface_distance_m=body_min,shaft_radius_m=radius,hand_contact_guard_radius_m=.145,minimum_oar_vertex_hull_distance_m=hull_min,maximum_planted_foot_vertex_motion_m=foot_change,blade_tip_height_range_m=[min(tip_levels),max(tip_levels)],method='Actual interpolated character meshes; shaft capsule samples outside intended hand contacts; both hull/tail triangle overlap against transformed original paddle mesh')
+report=dict(status='PASS' if not overlaps and not body_hits and foot_change<.012 and body_motion>.03 else 'FAIL',pose_samples=80,maximum_character_vertex_motion_m=body_motion,both_hulls_checked=True,oar_hull_triangle_overlaps=overlaps,shaft_body_contacts_outside_grips=body_hits[:25],shaft_body_contact_count=len(body_hits),minimum_shaft_body_surface_distance_m=body_min,shaft_radius_m=radius,hand_contact_guard_radius_m=.145,minimum_oar_vertex_hull_distance_m=hull_min,maximum_planted_foot_vertex_motion_m=foot_change,blade_tip_height_range_m=[min(tip_levels),max(tip_levels)],method='Actual interpolated character meshes; shaft capsule samples outside intended hand contacts; both hull/tail triangle overlap against transformed dedicated steering-oar mesh')
 (R/'results/steering_collision_audit.json').write_text(json.dumps(report,indent=2),encoding='utf8');print('STEERING_COLLISION',json.dumps(report),flush=True)
 if report['status']!='PASS':raise RuntimeError('Steering geometry audit failed')

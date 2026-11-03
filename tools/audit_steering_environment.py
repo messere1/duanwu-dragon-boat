@@ -14,7 +14,7 @@ for root in bpy.data.objects['world_export'].children:
   start=len(vs);vs.extend(o.matrix_world@v.co for v in o.data.vertices);fs.extend(tuple(start+i for i in p.vertices) for p in o.data.polygons)
 environment=BVHTree.FromPolygons(vs,fs);del vs,fs
 v=[];f=[]
-for line in (R/'models/paddle.obj').open(encoding='utf8'):
+for line in (R/'models/steering_oar.obj').open(encoding='utf8'):
  if line.startswith('v '):v.append(Vector(tuple(map(float,line.split()[1:]))))
  elif line.startswith('f '):
   ids=[int(t.split('/')[0])-1 for t in line.split()[1:]]

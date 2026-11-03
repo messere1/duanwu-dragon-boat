@@ -13,7 +13,8 @@
     "open_human_seated_Human.ears"
   ],
   "closed_cycle_max_error_m": 0.0,
-  "max_palm_target_error_m": 5.669853259505537e-05,
-  "source": "MakeHuman CC0 standing rig; linked steering oar, wrist IK, planted ankle targets",
-  "phase_keys": "4.2 second steering correction cycle; both hands follow the same rigid oar"
+  "max_palm_target_error_m": 6.216162231121095e-05,
+  "source": "MakeHuman CC0 standing rig; linked steering oar, oriented wrist IK, planted ankle targets",
+  "phase_keys": "4.2 second steering correction cycle; both hands follow the same rigid oar",
+  "grip_model": "steering_oar.obj; 24 mm round T grip, 24.57 mm shaft; oriented surface-fitted palm sockets"
 }

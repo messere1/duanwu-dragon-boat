@@ -66,12 +66,16 @@ steering_collision=json.loads((out/'steering_collision_audit.json').read_text(en
 steering_source=json.loads((out/'steering_authoring_validation.json').read_text(encoding='utf8'))
 assert steering['closed_cycle_max_error_m']<.0001 and steering['max_palm_target_error_m']<.002
 assert steering_collision['status']==steering_source['status']=='PASS'
+grip=json.loads((out/'steering_grip_audit.json').read_text(encoding='utf8'))
+assert grip['status']=='PASS' and grip['interpolated_phases']==160 and grip['maximum_penetration_m']==0
+assert grip['pose_sha256']==hashlib.sha256((ROOT/'models/steering_cycle.bin').read_bytes()).hexdigest()
+assert grip['oar_sha256']==hashlib.sha256((ROOT/'models/steering_oar.obj').read_bytes()).hexdigest()
 steering_environment=json.loads((out/'steering_environment_audit.json').read_text(encoding='utf8'))
 assert steering_environment['status']=='PASS' and steering_environment['trajectory_samples']==3122
 assert steering_environment['trajectory_sha256']==hashlib.sha256((out/'steering_world_samples.csv').read_bytes()).hexdigest()
 assert 'Animated helmsmen and linked steering oars loaded' in log
-report['steering']={'pose_frames':steering['frames'],'max_palm_target_error_m':steering['max_palm_target_error_m'],'collision_checks':steering_collision['pose_samples'],'hull_overlap_count':len(steering_collision['oar_hull_triangle_overlaps']),'body_contact_count':steering_collision['shaft_body_contact_count'],'feet_vertex_motion_m':steering_collision['maximum_planted_foot_vertex_motion_m'],'character_vertex_motion_m':steering_collision['maximum_character_vertex_motion_m'],'editable_source_validated':True,'environment_trajectory_samples':steering_environment['trajectory_samples'],'environment_contacts':steering_environment['contact_count']}
-report['checks']+=['Both helmsmen animate with linked steering-oar grips and planted feet','Actual interpolated steering geometry checked against torso and both hulls','Editable steering rig and keyed oar palms verified']
+report['steering']={'grip_surface_check':{k:grip[k] for k in ('interpolated_phases','minimum_surface_gap_m','maximum_surface_gap_m','maximum_penetration_m')},'pose_frames':steering['frames'],'max_palm_target_error_m':steering['max_palm_target_error_m'],'collision_checks':steering_collision['pose_samples'],'hull_overlap_count':len(steering_collision['oar_hull_triangle_overlaps']),'body_contact_count':steering_collision['shaft_body_contact_count'],'feet_vertex_motion_m':steering_collision['maximum_planted_foot_vertex_motion_m'],'character_vertex_motion_m':steering_collision['maximum_character_vertex_motion_m'],'editable_source_validated':True,'environment_trajectory_samples':steering_environment['trajectory_samples'],'environment_contacts':steering_environment['contact_count']}
+report['checks']+=['Both helmsmen animate with linked steering-oar grips and planted feet','Actual interpolated steering geometry checked against torso and both hulls','Editable steering rig and keyed oar palms verified','Palm/finger surfaces at both grips checked at 160 interpolated phases without contact-region exemptions']
 (out/'runtime_validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(report,ensure_ascii=False))
 
