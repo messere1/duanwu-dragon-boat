@@ -70,8 +70,8 @@ inline Asset readSceneOBJ(const fs::path& path,const std::vector<Material>& mate
 struct CacheHeader {char magic[8];uint64_t size,stamp,mtlStamp,vertices,batches,triangles;};
 inline uint64_t fileStamp(const fs::path& path){return uint64_t(fs::last_write_time(path).time_since_epoch().count());}
 inline Asset loadScene(const fs::path& root,const std::vector<Material>& mats,bool& cacheHit,const std::function<void(size_t)>& progress={}){
-    auto src=root/L"models/scene_preview.obj",mtl=root/L"models/palette.mtl",cache=root/L"cache/scene-v5.bin";
-    CacheHeader want{};memcpy(want.magic,"DBSCN05",8);want.size=fs::file_size(src);want.stamp=fileStamp(src);want.mtlStamp=fileStamp(mtl);cacheHit=false;
+    auto src=root/L"models/scene_preview.obj",mtl=root/L"models/palette.mtl",cache=root/L"cache/scene-v6.bin";
+    CacheHeader want{};memcpy(want.magic,"DBSCN06",8);want.size=fs::file_size(src);want.stamp=fileStamp(src);want.mtlStamp=fileStamp(mtl);cacheHit=false;
     FILE* f=_wfopen(cache.c_str(),L"rb");if(f){CacheHeader h{};bool ok=fread(&h,sizeof(h),1,f)==1&&memcmp(h.magic,want.magic,8)==0&&h.size==want.size&&h.stamp==want.stamp&&h.mtlStamp==want.mtlStamp&&h.vertices<50000000&&h.batches<20000;
         Asset a;if(ok){a.vertices.resize(size_t(h.vertices));ok=fread(a.vertices.data(),sizeof(PackedVertex),a.vertices.size(),f)==a.vertices.size();
             for(uint64_t i=0;ok&&i<h.batches;++i){int info[3];uint64_t count=0;ok=fread(info,sizeof(info),1,f)==1&&fread(&count,sizeof(count),1,f)==1&&info[0]>=0&&info[0]<int(mats.size())&&info[1]>=0&&info[1]<=4&&count<=30000000;if(!ok)break;Batch b;b.material=info[0];b.entity=info[1];b.motion=info[2];b.indices.resize(size_t(count));ok=fread(b.indices.data(),sizeof(uint32_t),size_t(count),f)==count;if(ok)for(auto idx:b.indices)if(idx>=h.vertices){ok=false;break;}a.batches.push_back(std::move(b));}

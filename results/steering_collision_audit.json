@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "pose_samples": 80,
+  "maximum_character_vertex_motion_m": 0.2137989103794098,
+  "both_hulls_checked": true,
+  "oar_hull_triangle_overlaps": [],
+  "shaft_body_contacts_outside_grips": [],
+  "shaft_body_contact_count": 0,
+  "minimum_shaft_body_surface_distance_m": 0.1028820127248764,
+  "shaft_radius_m": 0.0189,
+  "hand_contact_guard_radius_m": 0.145,
+  "minimum_oar_vertex_hull_distance_m": 0.9699780344963074,
+  "maximum_planted_foot_vertex_motion_m": 0.0,
+  "blade_tip_height_range_m": [
+    -0.7695715427398682,
+    -0.6244664192199707
+  ],
+  "method": "Actual interpolated character meshes; shaft capsule samples outside intended hand contacts; both hull/tail triangle overlap against transformed original paddle mesh"
+}

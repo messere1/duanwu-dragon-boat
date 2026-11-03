@@ -3,6 +3,7 @@
 #include "assets.h"
 #include "routes.h"
 #include "cinematic.h"
+#include "steering.h"
 #include <iostream>
 void require(bool ok,const char* what){if(!ok)throw std::runtime_error(what);}
 void write(const fs::path& p,const std::string& s){FILE* f=_wfopen(p.c_str(),L"wb");if(!f)throw std::runtime_error("Cannot write test fixture");fwrite(s.data(),1,s.size(),f);fclose(f);}
@@ -44,5 +45,9 @@ int main(){try{
  CameraFlight flight;for(int i=1;i<6;++i){double t=flight.keys[i].time,h=.0001;Vec3 left=(flight.at(t)-flight.at(t-h))*(1/h),right=(flight.at(t+h)-flight.at(t))*(1/h);require(length(left-right)<.002,"Cinematic Bezier camera has continuous velocity");}
  for(int i=1;i<=1560;++i){auto a=flight.at((i-1)/60.),b=flight.at(i/60.);require(length(b-a)<.2&&b.z>3.1,"Drone low flight remains above water with smooth per-frame motion");}
  require(length((flight.at(26)-b.at(1))-(flight.at(0)-b.at(0)))>12,"Cinematic camera is not rigidly attached to a boat");
- std::cout<<"PASS: OBJ/cache/coordinates, independent Bezier camera, variable speeds, paddles, drum contacts, flag pinning, sternward direction and motion, cinematic velocity continuity\n";return 0;
+ require(motionForGroup("red_helmsman__body")==-3&&motionForGroup("jade_steering_oar__timber_shaft")==-4,"Static helmsmen and steering oars must be replaced");
+ {auto samples=fs::path(exe).parent_path().parent_path()/L"models/steering_samples.csv";FILE* file=_wfopen(samples.c_str(),L"rb");require(file!=nullptr,"Baked steering sample file exists");char sampleLine[512];fgets(sampleLine,sizeof(sampleLine),file);int checked=0;
+  while(fgets(sampleLine,sizeof(sampleLine),file)){std::string line(sampleLine);std::replace(line.begin(),line.end(),',',' ');std::istringstream row(line);double phase;Vec3 upper,lower;row>>phase>>upper.x>>upper.y>>upper.z>>lower.x>>lower.y>>lower.z;auto p=steeringFrame(phase);require(length(p.upper-upper)<.002&&length(p.lower-lower)<.002,"Baked palms must match the runtime steering-oar grips");++checked;}fclose(file);require(checked==41,"Complete closed steering cycle samples");}
+ for(int team=0;team<2;++team)for(int i=0;i<=1560;++i){auto p=steeringFrame(steeringPhase(i/60.,team));require(p.lower.x<p.upper.x&&p.lower.z>.40,"Steering shaft must slope aft and outboard of the torso");}
+ std::cout<<"PASS: OBJ/cache/coordinates, independent Bezier camera, variable speeds, paddles, drum contacts, linked steering grips, flag pinning, sternward direction and motion, cinematic velocity continuity\n";return 0;
  }catch(const std::exception& e){std::cerr<<"FAIL: "<<e.what()<<"\n";return 1;}}

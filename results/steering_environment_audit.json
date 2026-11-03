@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "trajectory_samples": 3122,
+  "samples_per_team": 1561,
+  "frequency_hz": 60,
+  "environment_assets": [
+    "arch_bridge",
+    "bank_ground",
+    "eroded_riverbank_faces",
+    "mooring_dock",
+    "natural_riverbed",
+    "quay_access",
+    "quay_segment",
+    "quay_weathered_b",
+    "street_gutter"
+  ],
+  "contact_count": 0,
+  "contacts": [],
+  "trajectory_sha256": "3ffb9c75cec0e49c64bc58e3ed1641f182152f610df3a8b0dff839f172e232df",
+  "method": "Full transformed steering-oar triangles versus quay, docks, bridges, banks and riverbed at every C++ 1/60-second race sample"
+}

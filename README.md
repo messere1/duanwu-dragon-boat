@@ -8,7 +8,7 @@
 
 - OBJ/MTL 加载、多材质纹理、模型平移/旋转/缩放与鼠标相机控制。
 - Phong 光照、法线贴图、天空环境映射、方向光投影和四倍 MSAA。
-- 两队独立变速与领先交替，24 支同步船桨、IK 烘焙人物动作、坐姿鼓手交替击鼓与旗帜摆动。
+- 两队独立变速与领先交替，24 支同步船桨、IK 烘焙人物动作、坐姿鼓手交替击鼓、船尾舵手与长桨联动，以及旗帜摆动。
 - 独立于龙舟轨迹的五阶段镜头，包含低空跟拍、河湾转向和航拍收尾。
 - 85 栋皖南风格民居、院落、田块、石岸、山脊地形，以及重新贴地的树木、灌木和竹丛。
 
@@ -50,7 +50,8 @@ git lfs pull
 
 - `dragonboat_realism.blend`：**最新完整可编辑场景**，包含山体几何、建筑细节与植被调整。
 - `models/scene_preview.obj`：最新完整运行场景；其他 OBJ 为独立部件、补充组件或历史建模资产。
-- `models/rowing_cycle.bin`、`drumming_cycle.bin`：人物动作数据。
+- `models/rowing_cycle.bin`、`drumming_cycle.bin`、`steering_cycle.bin`：人物动作数据。
+- `models/helmsman_steering.blend`：新增的可编辑舵手掌舵动画；完整环境中的人物装配为静态参考。
 - `src/`、`shaders/`：渲染器和着色器。
 - `textures/`、`external_assets/`：纹理、开放素材与其来源记录。
 - `tools/`：建模、导出、几何检查和验证脚本。部分阶段脚本依赖本机保存的工作基线，最终模型可直接编辑。
@@ -67,9 +68,11 @@ git lfs pull
 .\bin\DragonBoat.exe --playthrough
 ```
 
-本次发布前的记录通过 34 帧功能画面和完整 26 秒播放检查，OpenGL 错误为 0；85 栋房屋的 425 个地面支撑采样检查通过。结果见 [runtime_validation.json](results/runtime_validation.json) 和 [山体几何调整记录](docs/山体几何调整.md)。
+本次发布前的记录通过 36 帧功能画面和完整 26 秒播放检查，OpenGL 错误为 0；85 栋房屋的 425 个地面支撑采样检查通过。结果见 [runtime_validation.json](results/runtime_validation.json) 和 [山体几何调整记录](docs/山体几何调整.md)。
 
 水面、旗面、比赛速度和地形采用课程项目中的解析或程序化近似，没有进行完整流体、布料或地质侵蚀仿真。
+
+舵手和长桨的修正及几何检查见 [船尾掌舵动作修正](docs/船尾掌舵动作修正.md)。
 
 ## 素材署名与许可
 

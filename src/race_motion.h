@@ -24,6 +24,8 @@ inline PaddlePose paddlePose(double phase){
 }
 inline Vec3 paddlePoint(int row,int side,double shaftZ,double phase){auto p=paddlePose(phase);double a=p.angle*3.141592653589793/180,tilt=.4+p.feather*3.141592653589793/180,d=cos(tilt)*shaftZ;return {-3+1.1*row+.42+p.reach-sin(a)*d,1.51+p.lift+cos(a)*d,-side*(.66-sin(tilt)*shaftZ)};}
 inline int motionForGroup(const std::string& s){
+    if(s.find("_helmsman__")!=s.npos)return -3;
+    if(s.find("_steering_oar__")!=s.npos)return -4;
     if(s.find("_pennant__flag_cloth")!=s.npos)return 30;
     if(s.find("_drummer__")!=s.npos)return -2;
     if(s.find("_drumstick")!=s.npos)return s.find(".001")!=s.npos?21:20;

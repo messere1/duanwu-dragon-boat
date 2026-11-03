@@ -5,11 +5,11 @@ from PIL import Image,ImageStat,ImageChops
 ROOT=Path(__file__).resolve().parents[1];out=ROOT/'results'
 log=(out/'runtime.log').read_text(encoding='utf-8')
 frames=re.findall(r'Verify frame (\d+): GL=(\d+), frame_ms=([\d.]+), time=([\d.]+)',log)
-assert len(frames)==34 and all(int(e)==0 for _,e,_,_ in frames)
+assert len(frames)==36 and all(int(e)==0 for _,e,_,_ in frames)
 assert float(frames[18][3])==26 and 'SUCCESS' in log
 expected=next(i['triangles'] for i in json.loads((ROOT/'models/inventory.json').read_text()) if i['file']=='scene_preview.obj')
 assert f'OBJ triangles {expected},' in log
-images=[Image.open(out/f'verify_{i}.png').convert('RGB') for i in range(34)]
+images=[Image.open(out/f'verify_{i}.png').convert('RGB') for i in range(36)]
 for im in images:
     assert im.size==(1440,900)
     assert sum(ImageStat.Stat(im.crop((0,110,1440,900))).stddev)>40,'Blank or uniform scene readback'
@@ -28,7 +28,7 @@ drum=json.loads((ROOT/'models/drumming_cycle.json').read_text(encoding='utf8'))
 assert drum['max_palm_target_error_m']<.002 and drum['closed_cycle_max_error_m']<.0001
 beats=[tuple(map(float,r)) for r in re.findall(r'Drum sample ([\d.]+) right_tip_y=([\d.]+) left_tip_y=([\d.]+)',log)]
 assert len(beats)==3 and abs(beats[0][1]-1.67)<.0001 and abs(beats[2][2]-1.67)<.0001 and beats[1][1]>2.1
-report={'status':'PASS','renderer':re.search(r'Renderer (.+)',log).group(1).strip(),'obj_triangles':expected,'material_batches':int(re.search(r'batches (\d+)',log).group(1)),'checked_frames':34,'opengl_errors':0,'median_warm_frame_ms':round(statistics.median(steady),3),'full_timeline_seconds':26,'race_samples':race,'pose_cycle_frames':40,'drumming_pose_frames':drum['frames'],'drumming_contact_samples':beats,'drumming_palm_error_m':drum['max_palm_target_error_m'],'checks':['Seated stern-facing drummer, alternating beat contacts, rebound and palm IK rendered','OBJ scene and material images really rendered','Texture toggle changes scene pixels','PNG readback retains color channels','Keyboard translation/rotation/scale and mouse pan/look assertions passed','Additional OBJ imported into GPU buffers','Fixed-step complete 26-second boat and separate drone update passed','Catch / drive / recovery poses rendered with synchronized 24 paddles and IK-baked crew','Lead changes verified at 5, 15 and 26 seconds; speed integrated continuously'],'limitation':'Authored kinematic racing with analytic surface wakes, not a hydrodynamic solver. Filtered directional shadows and 4x MSAA enabled. Vegetation belts use shared 3D tree geometry; analytic wind and wakes are not cloth/fluid solvers.'}
+report={'status':'PASS','renderer':re.search(r'Renderer (.+)',log).group(1).strip(),'obj_triangles':expected,'material_batches':int(re.search(r'batches (\d+)',log).group(1)),'checked_frames':36,'opengl_errors':0,'median_warm_frame_ms':round(statistics.median(steady),3),'full_timeline_seconds':26,'race_samples':race,'pose_cycle_frames':40,'drumming_pose_frames':drum['frames'],'drumming_contact_samples':beats,'drumming_palm_error_m':drum['max_palm_target_error_m'],'checks':['Seated stern-facing drummer, alternating beat contacts, rebound and palm IK rendered','OBJ scene and material images really rendered','Texture toggle changes scene pixels','PNG readback retains color channels','Keyboard translation/rotation/scale and mouse pan/look assertions passed','Additional OBJ imported into GPU buffers','Fixed-step complete 26-second boat and separate drone update passed','Catch / drive / recovery poses rendered with synchronized 24 paddles and IK-baked crew','Lead changes verified at 5, 15 and 26 seconds; speed integrated continuously'],'limitation':'Authored kinematic racing with analytic surface wakes, not a hydrodynamic solver. Filtered directional shadows and 4x MSAA enabled. Vegetation belts use shared 3D tree geometry; analytic wind and wakes are not cloth/fluid solvers.'}
 shadow_diff=sum(ImageStat.Stat(ImageChops.difference(images[30].crop((0,130,1440,900)),images[31].crop((0,130,1440,900)))).mean)
 assert shadow_diff>1,'Shadow toggle did not change the scene'
 assert 'scene MSAA 4x' in log
@@ -61,6 +61,17 @@ patch=json.loads((out/'mountain_obj_patch.json').read_text(encoding='utf8'))
 assert patch['status']=='PASS' and patch['scene_triangles']==expected
 report.update({'mountain_geometry_triangles':assets['mountain_mesh']['triangles'],'mountain_support':assets['mountain_support']})
 report['checks']+=['Frustum culling preserves every scene pixel at the comparison camera','Shared 3D vegetation and village geometry/material dependencies checked','Head variation does not affect fingers throughout both interpolated pose cycles']
+steering=json.loads((ROOT/'models/steering_cycle.json').read_text(encoding='utf8'))
+steering_collision=json.loads((out/'steering_collision_audit.json').read_text(encoding='utf8'))
+steering_source=json.loads((out/'steering_authoring_validation.json').read_text(encoding='utf8'))
+assert steering['closed_cycle_max_error_m']<.0001 and steering['max_palm_target_error_m']<.002
+assert steering_collision['status']==steering_source['status']=='PASS'
+steering_environment=json.loads((out/'steering_environment_audit.json').read_text(encoding='utf8'))
+assert steering_environment['status']=='PASS' and steering_environment['trajectory_samples']==3122
+assert steering_environment['trajectory_sha256']==hashlib.sha256((out/'steering_world_samples.csv').read_bytes()).hexdigest()
+assert 'Animated helmsmen and linked steering oars loaded' in log
+report['steering']={'pose_frames':steering['frames'],'max_palm_target_error_m':steering['max_palm_target_error_m'],'collision_checks':steering_collision['pose_samples'],'hull_overlap_count':len(steering_collision['oar_hull_triangle_overlaps']),'body_contact_count':steering_collision['shaft_body_contact_count'],'feet_vertex_motion_m':steering_collision['maximum_planted_foot_vertex_motion_m'],'character_vertex_motion_m':steering_collision['maximum_character_vertex_motion_m'],'editable_source_validated':True,'environment_trajectory_samples':steering_environment['trajectory_samples'],'environment_contacts':steering_environment['contact_count']}
+report['checks']+=['Both helmsmen animate with linked steering-oar grips and planted feet','Actual interpolated steering geometry checked against torso and both hulls','Editable steering rig and keyed oar palms verified']
 (out/'runtime_validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(report,ensure_ascii=False))
 

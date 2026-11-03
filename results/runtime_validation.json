@@ -2,10 +2,10 @@
   "status": "PASS",
   "renderer": "NVIDIA GeForce RTX 3050 4GB Laptop GPU/PCIe/SSE2",
   "obj_triangles": 8221685,
-  "material_batches": 715,
-  "checked_frames": 34,
+  "material_batches": 719,
+  "checked_frames": 36,
   "opengl_errors": 0,
-  "median_warm_frame_ms": 37.412,
+  "median_warm_frame_ms": 40.621,
   "full_timeline_seconds": 26,
   "race_samples": [
     [
@@ -66,11 +66,14 @@
     "Final scene ray audit checks every 1/60 second against buildings/bridges/shore",
     "Frustum culling preserves every scene pixel at the comparison camera",
     "Shared 3D vegetation and village geometry/material dependencies checked",
-    "Head variation does not affect fingers throughout both interpolated pose cycles"
+    "Head variation does not affect fingers throughout both interpolated pose cycles",
+    "Both helmsmen animate with linked steering-oar grips and planted feet",
+    "Actual interpolated steering geometry checked against torso and both hulls",
+    "Editable steering rig and keyed oar palms verified"
   ],
   "limitation": "Authored kinematic racing with analytic surface wakes, not a hydrodynamic solver. Filtered directional shadows and 4x MSAA enabled. Vegetation belts use shared 3D tree geometry; analytic wind and wakes are not cloth/fluid solvers.",
-  "real_playthrough_frames": 572,
-  "real_playthrough_wall_seconds": 27.8674,
+  "real_playthrough_frames": 507,
+  "real_playthrough_wall_seconds": 28.0015,
   "real_playthrough_checkpoints": 6,
   "camera_geometry_audit": {
     "camera_samples": 1561,
@@ -82,7 +85,7 @@
   "flag_pole_edge_pinned": true,
   "shadow_map_size": 4096,
   "msaa_samples": 4,
-  "shadow_toggle_image_delta": 13.96715367965368,
+  "shadow_toggle_image_delta": 13.978835678210679,
   "landscape_tree_count": 216,
   "culling_scene_pixel_difference": 0,
   "static_triangles_culling_on_off": [
@@ -91,7 +94,7 @@
   ],
   "tree_prototype_triangles": 78374,
   "new_village_detail_triangles": 35746,
-  "real_playthrough_median_frame_ms": 32.434,
+  "real_playthrough_median_frame_ms": 40.207,
   "understory_triangles": 862098,
   "shrub_clumps": 777,
   "bamboo_groves": 14,
@@ -105,5 +108,17 @@
     "rigid_trees_snapped": 86,
     "shared_trees_snapped": 216,
     "method": "Old/new triangle BVH ground difference preserves original trunk planting depth"
+  },
+  "steering": {
+    "pose_frames": 40,
+    "max_palm_target_error_m": 5.669853259505537e-05,
+    "collision_checks": 80,
+    "hull_overlap_count": 0,
+    "body_contact_count": 0,
+    "feet_vertex_motion_m": 0.0,
+    "character_vertex_motion_m": 0.2137989103794098,
+    "editable_source_validated": true,
+    "environment_trajectory_samples": 3122,
+    "environment_contacts": 0
   }
 }

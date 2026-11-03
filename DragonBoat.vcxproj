@@ -8,7 +8,7 @@
  <PropertyGroup><OutDir>$(ProjectDir)bin\</OutDir><IntDir>$(ProjectDir)intermediate\$(Configuration)\</IntDir><TargetName>DragonBoat</TargetName><LocalDebuggerWorkingDirectory>$(ProjectDir)</LocalDebuggerWorkingDirectory></PropertyGroup>
  <ItemDefinitionGroup><ClCompile><WarningLevel>Level4</WarningLevel><LanguageStandard>stdcpp17</LanguageStandard><AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions></ClCompile><Link><SubSystem>Windows</SubSystem><AdditionalDependencies>opengl32.lib;gdi32.lib;comdlg32.lib;shell32.lib;user32.lib;ole32.lib;windowscodecs.lib;uuid.lib;%(AdditionalDependencies)</AdditionalDependencies></Link></ItemDefinitionGroup>
  <ItemGroup><ClCompile Include="src\main.cpp"/></ItemGroup>
- <ItemGroup><ClInclude Include="src\assets.h"/><ClInclude Include="src\gpu.h"/><ClInclude Include="src\shader.h"/><ClInclude Include="src\routes.h"/><ClInclude Include="src\race_motion.h"/><ClInclude Include="src\rowing.h"/><ClInclude Include="src\cinematic.h"/><ClInclude Include="src\shadows.h"/><ClInclude Include="src\antialias.h"/><ClInclude Include="src\math_scene.h"/></ItemGroup>
+ <ItemGroup><ClInclude Include="src\assets.h"/><ClInclude Include="src\gpu.h"/><ClInclude Include="src\shader.h"/><ClInclude Include="src\routes.h"/><ClInclude Include="src\race_motion.h"/><ClInclude Include="src\rowing.h"/><ClInclude Include="src\steering.h"/><ClInclude Include="src\cinematic.h"/><ClInclude Include="src\shadows.h"/><ClInclude Include="src\antialias.h"/><ClInclude Include="src\math_scene.h"/></ItemGroup>
  <ItemGroup><None Include="shaders\phong.vert"/><None Include="shaders\phong.frag"/></ItemGroup>
  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 </Project>
